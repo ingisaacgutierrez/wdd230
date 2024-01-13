@@ -1,0 +1,131 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tektur:wght@400;600&display=swap');
+
+/* Header CSS */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px;
+    font-family: 'Tektur', 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #ffffff;
+}
+
+/* Navigation CSS */
+nav.menu {
+    background-color: #333;
+    font-family: 'Tektur', 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+nav.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav.menu ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Center text */
+header, nav, main, footer {
+    text-align: center;
+}
+/* Center block elements */
+header img, nav ul, .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center inline or inline-block elements */
+nav ul li {
+    display: inline-block;
+}
+
+/* main css */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2{
+    font-family: 'Tektur', 'Roboto', sans-serif;
+    border-bottom: 1px solid #000;
+    font-size: 30px;
+    
+}
+
+/* Style for h3 */
+.card h3 {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 10px;
+    margin-top: auto;
+    border-radius: 10px;
+    font-family: 'Tektur', 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/* Layout main column cards using CSS Grid */
+.card {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; background-color: #ffffff; 
+    color: #000000; 
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin-bottom: 40px;
+}
+
+/* Style for course links list */
+ul {
+    list-style-type: none;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* footer css */
+footer {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+}
+
+footer img {
+    height: 55px;
+    width: 65px;
+    margin-right: 5px; 
+}
+
+#copyright {
+    margin-bottom: 20px; 
+}
