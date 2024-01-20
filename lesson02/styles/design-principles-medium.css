@@ -1,0 +1,11 @@
+@media (min-width: 601px) and (max-width:1024px){
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .card:last-child {
+        grid-column: span 2;
+    }
+}
