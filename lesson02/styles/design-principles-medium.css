@@ -8,4 +8,12 @@
     .card:last-child {
         grid-column: span 2;
     }
+    
+    #c3-img img {
+        max-width:100%;
+        height:auto; 
+        margin-right: 5px;
+        margin-top: 15px;
+     }
+
 }
