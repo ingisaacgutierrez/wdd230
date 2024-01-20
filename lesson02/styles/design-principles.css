@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tektur:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+}
+
+header {
+    background-color: #0a2032;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Tektur', 'Roboto', sans-serif;
+}
+
+
+.card {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card h3 {
+    color: #ffffff;
+    background-color: #3a4958;
+    font-family: 'Tektur', 'Roboto', sans-serif;
+    border-radius: 10px 0px;
+    margin: -10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card p {
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+}
+
+#c1-img img {
+   max-width: 100%;
+   height:auto; 
+   margin:5px;
+}
+
+#c2-img img {
+    max-width: 100%;
+    height:auto; 
+    margin:5px;
+ }
+
+ #c3-img img {
+    max-width: 100%;
+    height:auto; 
+    margin:5px;
+ }
+
+ footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #0a2032;
+    color: #ffffff;
+    padding: 30px 10px;
+}
