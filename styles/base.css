@@ -29,27 +29,68 @@ header img {
     margin-right: 20px; 
 }
 
-nav.menu {
+.navigation {
     background-color: #444;
     font-family: 'Tektur', 'Roboto', sans-serif;
 }
 
-nav.menu ul {
+.navigation ul {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
 
-nav.menu ul li a {
+.navigation ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
     display: block;
 }
 
-nav.menu ul li a:hover {
+.navigation ul li a:hover {
     background-color: #555;
+}
+
+.navigation ul.open{
+    display: block;
+    text-align: center;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "➡";
+}
+
+.open a {
+	display: block;
+}
+
+.navigation .active{
+    color: yellow;
+}
+
+.active::before {
+	content: "| "; 
+    color: yellow;
+}
+
+.active::after {
+	content: " |"; 
+    color: yellow;
 }
 
 main {
@@ -78,6 +119,7 @@ h2{
     border-radius: 10px;
     margin-bottom: 40px;
     text-align: center;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card h3{
@@ -99,6 +141,10 @@ h2{
     margin: 10px;
 }
 
+.map{
+    padding:30px;
+}
+
 ul {
     list-style-type: none;
     text-align: left;
@@ -107,6 +153,16 @@ ul {
 
 main section {
     width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    padding: 20px;
+    margin-top: -40px;
 }
 
 footer {
@@ -125,6 +181,14 @@ footer p{
 #flag{
     width: 65px;
     height: auto;
+}
+
+#name::before{
+ content:"⚽ ";
+}
+
+#name::after{
+    content:" ⚽";
 }
 
 #countryFlag {
