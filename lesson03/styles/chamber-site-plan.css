@@ -1,5 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@400&family=Roboto:wght@300&display=swap');
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
 :root {
   --primary-color: #023E8A;
   --secondary-color: #0077B6;
@@ -9,11 +17,10 @@
   --heading-font: "Oswald";
   --paragraph-font: Merriweather, Roboto, sans-serif;
 
-  
   --headline-color-on-white: #0077B6;  /* headlines on a white background */ 
   --headline-color-on-color: #ADE8F4; /* headlines on a colored background */ 
   --paragraph-color-on-white: #023E8A; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #48CAE4; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #ADE8F4; /* paragraph text on a colored background */ 
   --paragraph-background-color: #023E8A;
   --nav-link-color: #ADE8F4;
   --nav-background-color: #023E8A;
@@ -21,46 +28,68 @@
   --nav-hover-background-color: #48CAE4;
 }
 
-
+/* Body Styles */
 body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em;
   font-size: 18px;
   text-align: center;
 }
+
+/* Image Styles */
 img {
   display: block;
   margin: 0 auto;
   max-width: 300px;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
+
+/* Header Styles */
 header {
   padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
+
+header > h1, 
+header > h2 {
   color: var(--headline-color-on-color);
 }
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  padding:20px
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Horizontal Rule Styles */
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+/* Paragraph Styles */
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
-  padding: 1em;
+  padding: 30px;
+  text-align: justify;
 }
 
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+.color-schema p{
+  text-align: center;
+}
+
+/* List Styles */
 ul {
     list-style-type: decimal;
     font-family: var(--paragraph-font);
@@ -69,35 +98,42 @@ ul {
     text-align: left;
     margin-left: 50px;
 }
+
+/* Color Styles */
 .colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px;
+  margin: 50px;
+  gap: 10px;
+  color:var(--paragraph-color-on-white);
 }
-.colors th {
-  background-color: #b9b3b3;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
+
 .primary {
   background-color: var(--primary-color);
+  padding: 20px;
+  color:  var(--paragraph-color-on-color);
 }
+
 .secondary {
   background-color: var(--secondary-color);
+  padding: 20px;
+  color:  var(--paragraph-color-on-color);
 }
+
 .accent1 {
   background-color: var(--accent1-color);
+  padding: 20px;
+  color:var(--paragraph-color-on-white);
 }
+
 .accent2{
   background-color: var(--accent2-color);
+  padding: 20px;
+  color:var(--paragraph-color-on-white);
 }
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
+
+/* Navigation Styles */
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
@@ -105,17 +141,40 @@ nav {
   font-size: 1.2em;
   list-style-type: none;
   display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
 }
+
 nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
-  padding: 10px;
 }
-nav a:link, nav a:visited {
+
+nav a:link, 
+nav a:visited {
   color: var(--nav-link-color);
 }
+
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+/* Mobile View img*/
+#mobile-view img {
+  width: 90%;
+  border: solid 2px gray;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Large View img */
+#large-view img {
+  width: 100%;
+  max-width: 85%;
+  border: solid 2px gray;
+  margin: 10px auto;
+  margin-bottom: 50px;
 }
