@@ -1,0 +1,10 @@
+@media screen and (min-width: 600px) { 
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    display: flex;
+  }
+}
