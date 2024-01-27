@@ -1,10 +1,40 @@
 @media screen and (min-width: 600px) { 
-nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
+  
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 18px;
     text-align: center;
-    font-size: 1.2em;
-    list-style-type: none;
-    display: flex;
   }
+
+  .colors {
+    grid-template-columns: repeat(4, 1fr);
+    gap:0;
+  }
+
+  nav  {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    margin:0 auto;
+    padding: 0;
+  }
+
+  nav a:hover{
+    width: 100%;
+  }
+
+  #large-view {
+    display: grid;
+  }
+  
+  #large-view img {
+    max-width: none;
+    border: solid 2px gray;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
 }
