@@ -10,12 +10,85 @@
     <link rel="stylesheet" href="./styles/larger.css">
     <link rel="icon" href="./favicon.ico">
     <meta name="author" content="Isaac Gutierrez">
-    <meta name="description" content="This is the course assignment portal for WDD 230 - Web Frontend Development, by Isaac Gutierrez.">
-    <meta property="og:title" content="Isaac Gutierrez - WDD 230 - Web Frontend Development">
+    <meta name="description" content="This is a project where I create a chamber site for my city base in the instructions of the course WDD 230 - Web Frontend Development, by Isaac Gutierrez.">
+    <meta property="og:title" content="Guayaquil Pacific Chamber Society">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://blogapi.uber.com/wp-content/uploads/2019/08/Lugares-bonitos-para-visitar-en-Guayaquil-y-tomar-fotos-impresionantes-1024x512.png"> 
     <meta property="og:url" content="https://ingisaacgutierrez.github.io/wdd230/"> 
 </head>
 <body>
+    <div id="container">
+        <header>
+            <div id="header">
+                <img src="./images/logo_chamber.png" alt="Guayaquil Pacific Chamber Society">
+                <div class="social-icons">
+                    <a href="#"><img src="./images/logo_facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./images/logo_x.jpeg" alt="X"></a>
+                    <a href="#"><img src="./images/logo_linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" target="_blank">Discover</a></li>
+                <li><a href="#" target="_blank">Directory</a></li>
+                <li><a href="#" target="_blank">Join</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="hero">
+                <img src="./images/hero-image.jpg" alt="Hero Image">
+                <button>Join the Chamber</button>
+            </div>
+            <section class="main-content">
+                <h2>Events</h2>
+                <p>title of the event - Loading...</p>
+                <p>info of the event - Loading...</p>
+            </section>
+            <section class="card">
+                <p>Weather: <span id="weather">Loading...</span></p>
+            </section>
+            <div class="gye-records">
+                <h2>Chambers GPCS Records</h2>
+                <div class="record">
+                    <section class="card1">
+                        <img src="card1-icon.png" alt="card1 Icon">
+                        <h3>Title...</h3>
+                        <p>"Congrats message"...</p>
+                        <p>email...</p>
+                        <p>phone...</p>
+                        <a href="#">Website...</a>
+                    </section>
+                    <section class="card2">
+                        <img src="card2-icon.png" alt="card2 Icon">
+                        <h3>Title...</h3>
+                        <p>"Congrats message"...</p>
+                        <p>email...</p>
+                        <p>phone...</p>
+                        <a href="#">Website...</a>
+                    </section>
+                    <section class="card3">
+                        <img src="card3-icon.png" alt="card3 Icon">
+                        <h3>Title...</h3>
+                        <p>"Congrats message"...</p>
+                        <p>email...</p>
+                        <p>phone...</p>
+                        <a href="#">Website...</a>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>©2024 Guayaquil Pacific Chamber Society</p>
+                <p>Isaac Gutierrez S.</p>
+                <p>WDD 230 Project</p>
+                <p id="lastModified"></p> 
+            </div>
+        </footer>
+    </div>
+    <script src="./scripts/lastmodified.js"></script>
 </body>
 </html>
