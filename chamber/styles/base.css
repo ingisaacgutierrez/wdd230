@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@400&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #023E8A;
+    --secondary-color: #0077B6;
+    --accent1-color: #48CAE4;
+    --accent2-color: #ADE8F4;
+
+    --heading-font: "Oswald";
+    --paragraph-font: Merriweather, Roboto, sans-serif;
+
+    --headline-color-on-white: #0077B6;  /* headlines on a white background */ 
+    --headline-color-on-color: #ADE8F4; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #023E8A; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #ADE8F4; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #023E8A;
+    --nav-link-color: #ADE8F4;
+    --nav-background-color: #023E8A;
+    --nav-hover-link-color: #023E8A;
+    --nav-hover-background-color: #48CAE4;
+
+    --font-size: 14px;
+    --margin: 10px; /* margin and padding value */
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: var(--margin);
+}
+
+#header img {
+    height: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+main {
+    
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: var(--font-size);
+}
+
+.main-content p {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    padding: var(--margin);
+    margin: var(--margin);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nav-background-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    padding: var(--margin);
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+nav a.active {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero button {
+    position: absolute;
+    bottom: var(--margin);
+    right: var(--margin);
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    padding: var(--margin);
+}
+
+.main-content h2 {
+    margin-bottom: 10px;
+    color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
+}
+
+.card {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--margin);
+    margin: var(--margin);
+}
+
+.gye-records {
+    padding: var(--margin);
+    text-align: center;
+}
+
+.gye-records h2 {
+    margin-bottom: 10px;
+    color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
+
+}
+
+.record {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1, .card2, .card3 {
+    width: 65%;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-background-color);
+    padding: var(--margin);
+    margin: 10px  auto;
+    text-align: center;
+    border: 1px solid #9b9b9b;
+    border-radius: 10px;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card1 img, .card2 img, .card3 img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.card1 h3, .card2 h3, .card3 h3 {
+    margin-bottom: 10px;
+    color: var(--paragraph-color-on-white);
+    font-family: var(--heading-font);
+    font-size: 25px;
+}
+
+.card1 a, .card2 a, .card3 a {
+    color: var(--paragraph-background-color);
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--paragraph-background-color);
+    color: var(--accent2-color);
+    padding: 25px;
+    text-align: center;
+}
+
+
