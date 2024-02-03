@@ -1,20 +1,24 @@
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
     #header{
-        justify-content: space-between; /* Ajusta los elementos alrededor del espacio disponible */
-
+        justify-content: space-between; 
     }
 
     .chamber-name {
         display: flex;
-        flex-direction: row; /* Cambiado de column a row */
-        align-items: center; /* Alinea los elementos verticalmente */
+        flex-direction: row; 
+        align-items: center; 
     }
 
-    
-    .chamber-name h1, .chamber-name h2 {
-        margin: 6px;
+    .chamber-name h1, .chamber-name span {
+        margin: 0;
         font-size: 3rem;
         text-align: left;
+    }
+
+    .chamber-name span {
+        display: inline-block; 
+        margin-left: 10px; 
+        margin-top: 0; 
     }
 
     #menu{
@@ -75,16 +79,16 @@
     
     .record {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+        grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: auto; 
-        gap: 20px; /* Ajuste el espacio entre filas y columnas según tus preferencias */
+        gap: 20px; 
         padding: 20px;
         margin-top:-38px;
     }
     
     .card1, .card2, .card3 {
         box-sizing: border-box;
-        margin: 10px; /* Ajuste el margen según tus preferencias */
+        margin: 10px;
         width: 100%; 
         
     }

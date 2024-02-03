@@ -50,16 +50,20 @@
     margin-right: 15px;
 }
 
+.chamber-name {
+    text-align: left;
+}
+
 .chamber-name h1 {
     margin: 0;
     font-size: 3rem;
     text-align: left;
 }
 
-.chamber-name h2 {
+.chamber-name span {
+    display: block;
     margin: 0;
     font-size: 1.5rem;
-    text-align: left;
     margin-top: 10px;
 }
 
