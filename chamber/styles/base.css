@@ -94,8 +94,6 @@
     margin: var(--margin);
 }
 
-
-
 nav {
     display: flex;
     align-items: center;
@@ -221,7 +219,6 @@ nav a.active {
     margin-bottom: 10px;
     color: var(--headline-color-on-white);
     font-family: var(--heading-font);
-
 }
 
 .record {

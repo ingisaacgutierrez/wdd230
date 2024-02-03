@@ -91,15 +91,14 @@
         padding: 20px;
         margin-top: -38px;
     }
-    
-    
+
     .card1, .card2, .card3 {
         box-sizing: border-box;
         margin: 10px; 
         width: 100%; 
         
     }
-
+    
     .footer p {
         margin: 25px;
         display: inline-block;
