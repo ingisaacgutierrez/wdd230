@@ -1,0 +1,102 @@
+@media screen and (min-width: 1025px) {
+    #header{
+        justify-content: space-between; /* Ajusta los elementos alrededor del espacio disponible */
+
+    }
+
+    .chamber-name {
+        display: flex;
+        flex-direction: row; /* Cambiado de column a row */
+        align-items: center; /* Alinea los elementos verticalmente */
+    }
+
+    
+    .chamber-name h1, .chamber-name h2 {
+        margin: 6px;
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    #menu{
+        display:none;
+    }
+
+    nav ul{
+        display: flex;
+        width: 100%;
+        border:1px solid var(--nav-hover-background-color);
+        justify-content: center;
+    }
+
+    nav li a{
+        padding: 50px;
+        margin: 50px;
+    }
+
+    .active::before {
+        content: "| "; 
+        color: var(--primary-color);
+    }
+    
+    .active::after {
+        content: " |"; 
+        color: var(--primary-color);
+    }
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero button{
+        top: 50px; 
+        left: 175px; 
+    }
+
+    #section1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto; 
+        gap: 20px; 
+        padding: 20px;
+    }
+    
+    .main-content, .card {
+        box-sizing: border-box;
+        margin: 10px;
+        width: 100%; 
+    }
+
+    .gye-records h2{
+        text-align: left;
+        margin-left: 35px;
+        margin-top: -5px;
+    }
+    
+    .record {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+        grid-template-rows: auto; 
+        gap: 20px; /* Ajuste el espacio entre filas y columnas según tus preferencias */
+        padding: 20px;
+        margin-top:-38px;
+    }
+    
+    .card1, .card2, .card3 {
+        box-sizing: border-box;
+        margin: 10px; /* Ajuste el margen según tus preferencias */
+        width: 100%; 
+        
+    }
+
+    .footer p {
+        margin: 25px;
+        display: inline-block;
+        font-size: large;
+    }
+
+    .footer p:not(:last-child)::after {
+        content: " | ";
+        padding-left: 25px;
+    }
+}
