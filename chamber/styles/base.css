@@ -159,6 +159,10 @@ nav a.active {
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 .hero button {
@@ -210,6 +214,10 @@ nav a.active {
     margin-top: 25px;
 }
 
+#section1, .gye-records {
+    min-height: 300px;
+}
+
 .gye-records {
     padding: var(--margin);
     text-align: center;
@@ -219,6 +227,11 @@ nav a.active {
     margin-bottom: 10px;
     color: var(--headline-color-on-white);
     font-family: var(--heading-font);
+}
+
+button, h2 {
+    min-width: 150px;
+    
 }
 
 .record {
