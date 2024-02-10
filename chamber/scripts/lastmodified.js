@@ -26,9 +26,6 @@ modeButton.addEventListener("click", () => {
     const cardP = document.querySelectorAll(".main-content p, .card p, .main-content h2, .card h2"); 
     const cardH3 = document.querySelectorAll(".card1 h3, .card2 h3, .card3 h3"); 
     const cardA = document.querySelectorAll(".card1 a, .card2 a, .card3 a"); 
-    const heroImage = document.querySelector(".hero img"); // Selección de la imagen
-
-
 
     if (modeButton.textContent.includes("🕶️")) {
         main.style.background = "#343434";
@@ -62,7 +59,6 @@ modeButton.addEventListener("click", () => {
         cardA.forEach(a => { 
             a.style.color = "#ffffff"; 
         });
-		heroImage.style.opacity = "0.8"; 
         modeButton.textContent = "🔆";
     } else {
         main.style.background = "#eee";
@@ -96,7 +92,6 @@ modeButton.addEventListener("click", () => {
         cardA.forEach(a => { 
             a.style.color = ""; 
         });
-		heroImage.style.opacity = "1";
         modeButton.textContent = "🕶️";
     }
 });
