@@ -17,9 +17,7 @@
 </head>
 <body>
     <header>
-        <picture>
-            <img src="images/profile-picture.png" alt="Profile Picture">
-        </picture>
+        <img src="images/profile-picture.webp" alt="Profile Picture">
         <h1>Isaac Gutierrez S.</h1>
     </header>
     <button id="menu"></button>
@@ -32,6 +30,16 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=p8-p9#p8" target="_blank">Scripture</a></li>
         </ul>
     </nav>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-provo-temple-small.webp" media="(max-width: 400px)">
+            <img src="images/hero-provo-temple-large.webp" alt="Provo Utah Temple" width="960" height="800">
+        </picture>
+    </div>
+    
+    <div class="herolabel">
+        <p>Provo Utah Temple</p>
+    </div>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
@@ -65,10 +73,7 @@
             <div id="name">Isaac Gutierrez S.</div>
             <div id="countryFlag">
                 <span id="country">Ecuador</span>
-                <picture>
-                    <img id="flag" src="images/ecuador-flag.png" alt="Country Flag">
-                </picture>
-                
+                <img id="flag" src="images/ecuador-flag.webp" alt="Country Flag">
             </div>
         </div>
         <p id="lastModified"></p> 
