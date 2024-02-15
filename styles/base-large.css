@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) { 
+@media screen and (min-width: 800px) { 
 
 header{
     font-size: 40px;
@@ -18,6 +18,21 @@ header img{
     display:flex;
     padding:20px;
     font-size: 25px;
+}
+
+.hero img {
+    width: 100%;
+	height: 100%;
+}
+
+.herolabel {
+	position: absolute;
+	top: 500px;
+	left: 130px;
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
 }
 
 main{
