@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
     <link rel="icon" href="./favicon.ico">
-    <link rel="preload" href="./images/hero-image.jpg" as="image">
+    <link rel="preload" href="./images/hero-image.webp" as="image">
     <meta name="author" content="Isaac Gutierrez">
     <meta name="description" content="This is a project where I create a chamber site for my city base in the instructions of the course WDD 230 - Web Frontend Development, by Isaac Gutierrez.">
     <meta property="og:title" content="Guayaquil Pacific Chamber Society">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./images/ciudad_de_guayaquil.jpg">
+    <meta property="og:image" content="https://www.google.com/search?q=guayaquil+ciudad+picture&tbm=isch&ved=2ahUKEwjy3oDd_6uEAxV8BmIAHQO0CN4Q2-cCegQIABAA&oq=guayaquil+ciudad+picture&gs_lp=EgNpbWciGGd1YXlhcXVpbCBjaXVkYWQgcGljdHVyZUjzD1DdB1iZD3AAeACQAQCYAdMBoAH7CKoBBTAuNi4xuAEDyAEA-AEBigILZ3dzLXdpei1pbWfCAgQQIxgniAYB&sclient=img&ei=iU7NZbL2GPyMiLMPg-ii8A0&bih=773&biw=1600&prmd=invmbstz#imgrc=tCA8batYD_Ut4M"> 
     <meta property="og:url" content="https://ingisaacgutierrez.github.io/wdd230/"> 
 </head>
 <body>
@@ -22,16 +22,16 @@
         <header>
             <div id="header">
                 <div class="img-logo">
-                    <img src="./images/logo_chamber.png" alt="Guayaquil Pacific Chamber Society">
+                    <img src="./images/logo_chamber.webp" alt="Guayaquil Pacific Chamber Society">
                 </div>
                 <div class="chamber-name">
                     <h1>Guayaquil <span>Chamber of Commerce</span></h1>
                 </div>
                 <div class="right-section">
                     <div class="social-icons">
-                        <a href="#"><img src="./images/logo_facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="./images/logo_x.jpeg" alt="X"></a>
-                        <a href="#"><img src="./images/logo_linkedin.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="./images/logo_facebook.webp" alt="Facebook"></a>
+                        <a href="#"><img src="./images/logo_x.webp" alt="X"></a>
+                        <a href="#"><img src="./images/logo_linkedin.webp" alt="LinkedIn"></a>
                     </div>
                     <div class="hamburger-menu">
                         <button id="menu"></button>
@@ -52,7 +52,11 @@
         </div>
         <main>
             <div class="hero">
-                <img src="./images/hero-image.jpg" alt="Hero Image" loading="lazy">
+                <picture>
+                    <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-image-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-image-large.webp" alt="Hero image test" width="1500" height="750">
+                </picture>
                 <button>Join the Chamber</button>
             </div>
             <div id="section1">
@@ -64,6 +68,9 @@
                 <section class="card">
                     <h2>Weather</h2>
                     <p>Humidity: <span id="weather">35%</span></p>
+                    <p>Current temperature: <span id="temp">50</span> °F</p>
+                    <p>Current wind speed: <span id="wind">10</span> mph</p>
+                    <p>Wind chill factor: <span id="chill"></span> °F</p>
                 </section>
             </div>
             <div class="gye-records">
@@ -103,5 +110,6 @@
         </footer> 
     </div>
     <script src="./scripts/lastmodified.js"></script>
+    <script src="./scripts/windchill.js"></script>
 </body>
 </html>
