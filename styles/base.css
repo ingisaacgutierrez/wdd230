@@ -210,7 +210,7 @@ footer p{
 }
 
 #name::before{
- content:"⚽ ";
+    content:"⚽ ";
 }
 
 #name::after{
