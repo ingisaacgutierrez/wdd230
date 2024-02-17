@@ -47,10 +47,8 @@ main{
 }
  .map{
     width: 100%;
-    display: grid;
-    grid-template-columns: 20fr 1fr;
     margin-top: -58px;
-    margin-left: 58px;
+    padding: 55px;
  }
 
 h2 {
