@@ -109,7 +109,7 @@ header img {
 	opacity: 0.75;
 }
 
-.herolabel p {
+.herolabel h2 {
 	margin: 0;
 	padding: .25rem;
 	font-weight: 700;
@@ -162,13 +162,10 @@ h2{
     margin: 30px;
 }
 
-.card p{
+.card h4{
     padding: 20px;
     margin: 10px;
-}
-
-.label{
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -202,8 +199,10 @@ footer {
     text-align: center;
 }
 
-footer p{
+footer h3{
     padding:10px;
+    font-family: 'Roboto';
+    font-size: 25px;
 }
 
 #flag{
