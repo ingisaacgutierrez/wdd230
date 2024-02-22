@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile-picture.webp" alt="Profile Picture">
+        <img src="images/profile-picture.webp" alt="Profile Picture" loading="lazy">
         <h1>Isaac Gutierrez S.</h1>
     </header>
     <button id="menu"></button>
@@ -32,8 +32,8 @@
     </nav>
     <div class="hero">
         <picture>
-            <source srcset="images/hero-provo-temple-small.webp" media="(max-width: 400px)">
-            <img src="images/hero-provo-temple-large.webp" alt="Provo Utah Temple" width="1280" height="800">
+            <source srcset="images/hero-provo-temple-small.webp" media="(max-width: 400px)" loading="lazy">
+            <img src="images/hero-provo-temple-large.webp" alt="Provo Utah Temple" width="1280" height="800" loading="lazy">
         </picture>
     </div>
     
@@ -61,7 +61,7 @@
             <h3>Information</h3>
             <p>City: <span id="city">Loading...</span></p>
             <p>Weather: <span id="weather">Loading...</span></p>
-            <p>Number of visits: <span id="visits">Loading...</span></p>
+            <p><span class="label">Page Visits: </span><span class="visits"></span></p>
         </section>
     </main>
     <div class="map">
@@ -73,7 +73,7 @@
             <div id="name">Isaac Gutierrez S.</div>
             <div id="countryFlag">
                 <span id="country">Ecuador</span>
-                <img id="flag" src="images/ecuador-flag.webp" alt="Country Flag">
+                <img id="flag" src="images/ecuador-flag.webp" alt="Country Flag" loading="lazy">
             </div>
         </div>
         <p id="lastModified"></p> 
