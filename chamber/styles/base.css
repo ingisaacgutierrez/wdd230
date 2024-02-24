@@ -425,3 +425,13 @@ footer {
 .mbm-difference{mix-blend-mode:difference;}
 .blur {filter: blur(4px);}
 .contrast {filter: contrast(50%);}
+
+[data-theme='dark'] .sidebar {
+    background: #343434;
+    color: #ffffff;
+}
+
+[data-theme='dark'] .picture-content {
+    background: #343434;
+    color: #ffffff;
+}

@@ -15,7 +15,7 @@ function createCalendar(month, year) {
     var todayMonth = today.getMonth();
     var todayYear = today.getFullYear();
 
-    var calendar = '<table><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr><tr>';
+    var calendar = '<table><tr class="week-day"><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr><tr>';
 
     for (let i = 0; i <= daysInMonth; i++) {
         if (i < firstDay) {
