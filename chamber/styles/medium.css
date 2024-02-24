@@ -30,15 +30,8 @@
     nav ul{
         display: flex;
         width: 100%;
-        border:1px solid var(--nav-hover-background-color);
-        justify-content: center;
+        justify-content: space-around;
     }
-
-    nav li a {
-        padding: 15px; 
-        margin: 10px; 
-    }
-    
 
     .active::before {
         content: "| "; 
@@ -110,4 +103,16 @@
         padding-left: 25px;
     }
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+    }
+
+    .picture-content {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
 }

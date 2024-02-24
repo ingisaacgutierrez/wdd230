@@ -108,7 +108,6 @@
 
 nav {
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: var(--nav-background-color);
     font-size: 25px;
@@ -117,11 +116,11 @@ nav {
 nav ul {
     display: none;
     list-style: none;
+    justify-content: center;
 }
 
 nav a {
     color: var(--nav-link-color);
-    padding: var(--margin);
     text-decoration: none;
     font-family: var(--heading-font);
 }
@@ -129,7 +128,6 @@ nav a {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-    padding: 1px;
 }
 
 nav a.active {
@@ -320,7 +318,7 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
 }
 
@@ -336,10 +334,7 @@ footer {
 }
 
 .picture-content {
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-column: 1;
     margin: 30px;
     padding: 30px;
     background-color: var(--accent2-color);
@@ -352,10 +347,16 @@ footer {
 .picture-content img {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .sidebar div {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+#visit-message{
+    font-size: 25px;
+    text-align: center;
 }
 
 .sidebar h2{
@@ -363,14 +364,21 @@ footer {
     margin-bottom: 10px;
 }
 
-.demographics p{
-    margin-left: 30px;
+.demographics p, h2{
+    justify-content: center;
+    text-align: center;
 }
+
+#calendar {
+    display: flex;
+    justify-content: center;
+}
+
 #calendar-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 #calendar-nav button {
@@ -378,16 +386,11 @@ footer {
     border:none;
     font-size: 2em;
     cursor: pointer;
-    margin-left: -55px;
 }
 
 #month-year{
-    margin-left:-55px ;
-}
-#calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 #calendar table {
@@ -410,7 +413,15 @@ footer {
     background-color: var(--accent1-color);
 }
 
-
 .events ul{
-    margin-left: 50px;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
 }
+
+.hover:hover {box-shadow: 0 0 50px #333;}
+.rocorn {border-radius: 15px 150px;}
+.opac {opacity: .5;}
+.mbm-difference{mix-blend-mode:difference;}
+.blur {filter: blur(4px);}
+.contrast {filter: contrast(50%);}

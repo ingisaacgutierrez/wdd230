@@ -28,14 +28,9 @@
     nav ul{
         display: flex;
         width: 100%;
-        border:1px solid var(--nav-hover-background-color);
-        justify-content: center;
+        justify-content: space-around;
     }
 
-    nav li a{
-        padding: 50px;
-        margin: 50px;
-    }
 
     .active::before {
         content: "| "; 
@@ -102,5 +97,18 @@
     .footer p:not(:last-child)::after {
         content: " | ";
         padding-left: 25px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 10px;
+    }
+
+    .picture-content {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
     }
 }
