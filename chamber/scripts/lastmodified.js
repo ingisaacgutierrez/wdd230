@@ -26,9 +26,16 @@ modeButton.addEventListener("click", () => {
     const cardP = document.querySelectorAll(".main-content p, .card p, .main-content h2, .card h2"); 
     const cardH3 = document.querySelectorAll(".card1 h3, .card2 h3, .card3 h3"); 
     const cardA = document.querySelectorAll(".card1 a, .card2 a, .card3 a"); 
+    const sidebar = document.querySelector(".sidebar");
+    const pictureContent = document.querySelector(".picture-content");
+    const weekDays = document.querySelectorAll(".week-day");
 
     if (modeButton.textContent.includes("🕶️")) {
         main.style.background = "#343434";
+        sidebar.style.background = "#232323";
+        sidebar.style.color = "#ffffff"; 
+        pictureContent.style.background = "#232323";
+        pictureContent.style.color = "#ffffff"; 
         header.style.background = "#232323";
         header.style.color = "#ffffff"; 
         footer.style.background = "#111111";
@@ -58,10 +65,14 @@ modeButton.addEventListener("click", () => {
         });
         cardA.forEach(a => { 
             a.style.color = "#ffffff"; 
-        });
+        });   
         modeButton.textContent = "🔆";
     } else {
         main.style.background = "#eee";
+        sidebar.style.background = "";
+        sidebar.style.color = "";
+        pictureContent.style.background = "";
+        pictureContent.style.color = "";
         header.style.background = "";
         header.style.color = "";
         footer.style.background = "";
