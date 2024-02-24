@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guayaquil Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="preload" href="./images/hero-image.webp" as="image">
+    <meta name="author" content="Isaac Gutierrez">
+    <meta name="description" content="This is a project where I create a chamber site for my city base in the instructions of the course WDD 230 - Web Frontend Development, by Isaac Gutierrez.">
+    <meta property="og:title" content="Guayaquil Pacific Chamber Society">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/search?q=guayaquil+ciudad+picture&tbm=isch&ved=2ahUKEwjy3oDd_6uEAxV8BmIAHQO0CN4Q2-cCegQIABAA&oq=guayaquil+ciudad+picture&gs_lp=EgNpbWciGGd1YXlhcXVpbCBjaXVkYWQgcGljdHVyZUjzD1DdB1iZD3AAeACQAQCYAdMBoAH7CKoBBTAuNi4xuAEDyAEA-AEBigILZ3dzLXdpei1pbWfCAgQQIxgniAYB&sclient=img&ei=iU7NZbL2GPyMiLMPg-ii8A0&bih=773&biw=1600&prmd=invmbstz#imgrc=tCA8batYD_Ut4M"> 
+    <meta property="og:url" content="https://ingisaacgutierrez.github.io/wdd230/"> 
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="header">
+                <div class="img-logo">
+                    <img src="./images/logo_chamber.webp" alt="Guayaquil Pacific Chamber Society">
+                </div>
+                <div class="chamber-name">
+                    <h1>Guayaquil Chamber of Commerce</h1>
+                </div>
+                <div class="right-section">
+                    <div class="social-icons">
+                        <a href="#"><img src="./images/logo_facebook.webp" alt="Facebook"></a>
+                        <a href="#"><img src="./images/logo_x.webp" alt="X"></a>
+                        <a href="#"><img src="./images/logo_linkedin.webp" alt="LinkedIn"></a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <button id="menu"></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="#" target="_blank">Discover</a></li>
+                <li><a href="#" target="_blank">Directory</a></li>
+                <li><a href="#" target="_blank">Join</a></li>
+            </ul>
+        </nav>
+        <div id="mode">
+            🕶️
+        </div>
+        <main>
+            <div class="grid-container">
+                    <div class="sidebar">
+                        <div id="visit-message">
+                        </div>
+                        <div class="demographics">
+                            <h2>Demographics</h2>
+                            <p>Population: 4,391,923</p>
+                            <p>Median Age: 28</p>
+                            <p>Median Household Income: $850.00</p>
+                        </div>
+                        <div class="events">
+                            <h2>Events</h2>
+                            <ul>
+                                <li><a href="#">Event 1</a></li>
+                                <li><a href="#">Event 2</a></li>
+                            </ul>
+                        </div>
+                        <div id="calendar-nav">
+                            <button id="prev">&lt;</button>
+                            <span id="month-year"></span>
+                            <button id="next">&gt;</button>
+                        </div>
+                        <div id="calendar"></div>
+                    </div>
+                <div class="picture-content">
+                    <img src="./images/autorenova.jpg" alt="Autorenova Rastreo Satelital" loading="lazy">
+                    <img src="./images/tecno_red.jpg" alt="Tecno Red" loading="lazy">
+                    <img src="image3.jpg" alt="Image 3">
+                    <img src="image4.jpg" alt="Image 4">
+                    <img src="image5.jpg" alt="Image 5">
+                    <img src="image6.jpg" alt="Image 6">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>©2024 Guayaquil Pacific Chamber Society</p>
+                <p>Isaac Gutierrez S.</p>
+                <p>WDD 230 Project</p>
+                <p id="lastModified"></p> 
+            </div>
+        </footer>
+    </div>
+    <script src="./scripts/lastmodified.js"></script>
+    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/calendar.js"></script>
+    <script src="./scripts/localstorage.js"></script>
+</body>
+</html>
