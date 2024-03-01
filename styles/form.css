@@ -1,18 +1,53 @@
-input[name="email"]:required:valid {
-	border-bottom: solid 8px green;
+#formmessage {
+	visibility: none;
+	margin-top: 75px;
+	color: red;
+    text-align: center;
 }
 
-input[name="email"]:invalid {
-	border-bottom: solid 8px red;
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
 }
 
-input[type=range]{
-	margin: 1rem 0;
-	padding: 0.5em;
+/*----------- FORM --------------*/
+.wf1 fieldset{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    margin-left: 20%;
+}
+
+.wf1 legend {
+    color: #445ba9;
+    padding: 0.5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
 }
 
 #r {
-	width: 180px;
+	width: 100%;
+    max-width: 400px;
 	margin-bottom: 1rem;
 }
 
@@ -23,72 +58,25 @@ input[type=range]{
 }
 
 #rangevalues {
-	display: flex;
-	margin: 0 0 1rem 25px;
-	width: 200px;
-}
-
-#rangevalues option {
-	flex: 1 1 auto;
-}
-
-#formmessage {
-	visibility: none;
-	margin: 10px 0;
-	padding: 0.5rem;
-	color: red;
-}
-
-button {
-	padding: 10px;
-	font-size: 1.2rem;
-	font-weight: 700;
-	margin-top: 1rem;
-}
-
-.f1 {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 1em;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-    margin: 2rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 2px;
 }
 
-.f1 label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-    font-size: .85em;
-    color: #333;
+#rangevalues option{
+    padding: 0;
 }
 
-.f1 input {
-    padding: .65em;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 1rem;
+input[type="range"] {
+    width: 400px;
+    margin: 0;
 }
 
-.f1 button {
-    padding: .65em 1em;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 1em;
-}
 
-.f1 button:hover {
-    background-color: #0056b3;
-}
-
-.f1 input[type="submit"]
+.wf1 input[type="submit"]
 {
     border: none;
     background-image: linear-gradient(#9c2c13, #6f200e);
@@ -97,7 +85,16 @@ button {
     padding: .8rem;
     width: 95%;
     max-width: 400px;
-    margin: -1rem 2% 2rem 2%;
+    margin-top: 25px;
+    margin-left: 21%;
     box-shadow: 1px 1px 4px #999;
 
+}
+
+.wf1 input:required{
+    border-bottom: solid 8px red;
+}
+
+.wf1 input:required:valid{
+    border-bottom: solid 8px green;
 }
