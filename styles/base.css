@@ -1,5 +1,14 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tektur:wght@400;600&display=swap');
+:root {
+    --primary-color: #9c2c13;
+    --secondary-color: #eee;
+    --font-family: Arial, sans-serif;
+    --margin: 1rem;
+    --padding: 0.75rem;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -246,8 +255,8 @@ footer h3{
 }
 
 .wf1 legend {
-    color: #445ba9;
-    padding: 0.5rem;
+    color: var(--primary-color);
+    padding: var(--padding);
 }
 
 .wf1 label{
@@ -258,9 +267,10 @@ footer h3{
 }
 
 .wf1 input[type="text"],
+.wf1 input[type="password"],
 .wf1 input[type="email"]
 {
-    background-color: #eee;
+    background-color: var(--secondary-color);
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
