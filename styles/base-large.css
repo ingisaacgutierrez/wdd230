@@ -76,4 +76,18 @@ footer{
     justify-content: center;
 }
 
+.wf1 fieldset{
+   margin-left: 20%;
+}
+
+.wf1 input[type="submit"]
+{
+    margin-left: 21%;
+}
+
+.formh1{
+    margin-left: 19%;
+    
+}
+
 }

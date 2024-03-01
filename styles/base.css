@@ -230,3 +230,110 @@ footer h3{
     align-items: center;
     gap: 10px;
 }
+
+#formmessage {
+	visibility: none;
+	margin-top: 25px;
+	color: red;
+    text-align: center;
+}
+
+/*----------- FORM --------------*/
+.wf1 fieldset{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.wf1 legend {
+    color: #445ba9;
+    padding: 0.5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+#r {
+	width: 100%;
+    max-width: 400px;
+	margin-bottom: 1rem;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+	margin-bottom: 1rem;
+}
+
+#rangevalues {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 2px;
+}
+
+#rangevalues option{
+    padding: 0;
+}
+
+input[type="range"] {
+    width: 400px;
+    margin: 0;
+}
+
+
+.wf1 input[type="submit"]
+{
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 95%;
+    max-width: 400px;
+    margin-top: 25px;
+    margin-left: 15px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required{
+    border-bottom: solid 8px red;
+}
+
+.wf1 input:required:valid{
+    border-bottom: solid 8px green;
+}
+
+.recordh1{
+    font-size: 25px;
+}
+.recordp{
+    font-size: 15px;
+    text-align: center;
+    margin-left: 8%;
+}
+.formh1{
+    text-align: left;
+    margin-left: 30px;
+    
+}
