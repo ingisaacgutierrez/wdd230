@@ -101,8 +101,19 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 4fr 4fr;
         grid-gap: 10px;
+        margin-left: -300px;
+    }
+
+    .sidebar-form {
+        margin: 6rem;
+    }
+
+    .grid-form{
+        grid-column: 2;
+        display: grid;
+    
     }
 
     .picture-content {
@@ -110,5 +121,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
+        
     }
 }
