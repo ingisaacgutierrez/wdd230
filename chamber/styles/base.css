@@ -313,9 +313,6 @@ footer {
     text-align: center;
 }
 
-
-
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -333,7 +330,7 @@ footer {
     padding: 30px;
 }
 
-.picture-content {
+.picture-content{
     grid-column: 1;
     margin: 30px;
     padding: 30px;
@@ -434,4 +431,170 @@ footer {
 [data-theme='dark'] .picture-content {
     background: #343434;
     color: #ffffff;
+}
+
+.sidebar-form {
+    grid-column: 1;
+    margin: auto;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-background-color);
+    border: 1px solid #9b9b9b;
+    border-radius: 8px;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: auto;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0% 20%;
+    min-height: 20rem;
+}
+
+main h1{
+    color: var(--headline-color-on-white);
+    margin-left: 20px;
+}
+/*----------- FORM --------------*/
+
+.f1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: .5rem 2%;
+    color: var(--headline-color-on-white);
+}
+
+.f1 legend {
+    color: var(--headline-color-on-white);
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+}
+
+.f1 label{
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: .9rem;
+}
+
+
+.f1 div{
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size:  .9rem;
+}
+
+.f1 input[type="text"],
+.f1 input[type="tel"],
+.f1 input[type="email"],
+.f1 input[type="textarea"],
+.f1 select,
+.f1 input[type="number"]
+{
+    display: block;
+    margin-bottom: 20px;
+	border: 0;
+	border-bottom: 1px solid var(--primary-color);
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+
+.f1 input[type="radio"],
+.f1 input[type="checkbox"]
+{
+    margin-right: 6px;
+}
+
+.f1 input[type="submit"]
+{
+    border: none;
+    background-image: linear-gradient(var(--secondary-color), var(--primary-color));
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 95%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+
+}
+
+.f1 input:required{
+    border-right: solid 8px red;
+}
+
+.f1 input:required:valid{
+    border-right: solid 8px green;
+}
+
+.membership-level-display {
+    display: flex;
+    align-items: center;
+}
+
+#membership-level {
+    margin-left: 0.5rem;
+}
+
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.star-rating {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+}
+/* hide the inputs */
+.star-rating input {
+    display: none;
+}
+/* set properties of all labels */
+.star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 50px;
+    transition: 0.2s ease;
+    color: var(--primary-color);;
+}
+/* give label a hover state */
+.star-rating label:hover {
+    color: var(--primary-color);
+    transition: 0.2s ease;
+}
+.star-rating label:active::before {
+    transform:scale(1.1);
+}
+
+/* set shape of unselected label */
+.star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+/* set full star shape for checked label and those that come after it */
+.star-rating input:checked ~ label:before {
+    content:'\2605';
+}
+
+/* set color for each star */
+#star-a:checked ~ label { color: yellow; }
+#star-b:checked ~ label { color: rgb(90, 90, 90);}
+#star-c:checked ~ label { color: rgb(158, 68, 7);  }
+#star-d:checked ~ label { color: blue; }
+
+@-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
 }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guayaquil Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="preload" href="./images/hero-image.webp" as="image">
+    <meta name="author" content="Isaac Gutierrez">
+    <meta name="description" content="This is a project where I create a chamber site for my city base in the instructions of the course WDD 230 - Web Frontend Development, by Isaac Gutierrez.">
+    <meta property="og:title" content="Guayaquil Pacific Chamber Society">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/search?q=guayaquil+ciudad+picture&tbm=isch&ved=2ahUKEwjy3oDd_6uEAxV8BmIAHQO0CN4Q2-cCegQIABAA&oq=guayaquil+ciudad+picture&gs_lp=EgNpbWciGGd1YXlhcXVpbCBjaXVkYWQgcGljdHVyZUjzD1DdB1iZD3AAeACQAQCYAdMBoAH7CKoBBTAuNi4xuAEDyAEA-AEBigILZ3dzLXdpei1pbWfCAgQQIxgniAYB&sclient=img&ei=iU7NZbL2GPyMiLMPg-ii8A0&bih=773&biw=1600&prmd=invmbstz#imgrc=tCA8batYD_Ut4M"> 
+    <meta property="og:url" content="https://ingisaacgutierrez.github.io/wdd230/"> 
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="header">
+                <div class="img-logo">
+                    <img src="./images/logo_chamber.webp" alt="Guayaquil Pacific Chamber Society">
+                </div>
+                <div class="chamber-name">
+                    <h1>Guayaquil Chamber of Commerce</h1>
+                </div>
+                <div class="right-section">
+                    <div class="social-icons">
+                        <a href="#"><img src="./images/logo_facebook.webp" alt="Facebook"></a>
+                        <a href="#"><img src="./images/logo_x.webp" alt="X"></a>
+                        <a href="#"><img src="./images/logo_linkedin.webp" alt="LinkedIn"></a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <button id="menu"></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="./index.html"  target="_blank">Home</a></li>
+                <li><a href="./discover.html" target="_blank">Discover</a></li>
+                <li><a href="#" target="_blank">Directory</a></li>
+                <li><a href="#" class="active">Join</a></li>
+            </ul>
+        </nav>
+        <div id="mode">
+            🕶️
+        </div>
+        <main>
+            <div class="grid-container">
+                <div class="sidebar-form">
+                    <div>
+                        <h2>Membership Information</h2>
+                    </div>
+                    <div>
+                        <h2>NP Membership</h2>
+                        <p>This is the entry-level membership. It provides access to general resources and support, 
+                        such as networking events, business development seminars, and listing in the Chamber’s online directory.</p>
+                    </div>
+                    <div>
+                        <h2>Bronze Membership</h2>
+                        <p>In addition to the benefits of the NP Membership, Bronze members may also receive priority support, 
+                        access to exclusive business reports and market research, and opportunities for sponsorship and advertising at Chamber events.</p>
+                    </div>
+                    <div>
+                        <h2>Silver Membership</h2>
+                        <p> Silver Membership includes all the benefits of the Bronze Membership, along with access to premium resources such as high-level
+                        networking events, leadership development programs, and a dedicated account manager for personalized support.</p>
+                    </div>
+                    <div>
+                        <h2>Gold Membership</h2>
+                        <p>This is the highest level of membership. Gold members receive all the benefits of the Silver Membership, plus VIP access to all 
+                        Chamber events, opportunities to influence Chamber policy and strategy, and exclusive meetings with key business leaders and policymakers.</p>
+                    </div>
+                </div>
+                <div class="grid-form">
+                    <h1>Join Us</h1>
+                    <form method="get" action="thanks.html" class="f1">
+                        <fieldset>
+                            <legend>Applicant Information</legend>
+                            <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                            <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                            <label>Title/Position* <input type="text" name="position" id="position" pattern="[A-Za-z- ]{7,}" required></label>                        
+                            <label>Email <input type="email" name="email" placeholder="someone@gmail.com" id="email" required></label>
+                            <label>Phone <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Organization Information</legend>
+                            <label>Organization's name* <input type="text" name="organization" id="organization" required></label>
+                            <div class="membership-level-display">
+                                <div>Membership Level: </div>
+                                <div id="membership-level"> </div>
+                            </div>
+                            <div class="star-rating">
+                                <input type="radio" name="stars" id="star-a" value="4"/>
+                                <label for="star-a"> </label>
+                        
+                                <input type="radio" name="stars" id="star-b" value="3"/>
+                                <label for="star-b"> </label>
+                            
+                                <input type="radio" name="stars" id="star-c" value="2"/>
+                                <label for="star-c"> </label>
+                            
+                                <input type="radio" name="stars" id="star-d" value="1"/>
+                                <label for="star-d"> </label>
+                        </div>
+                            <input type="hidden" id="membership-input" name="membership">
+                            <div>Organization´s Description</div>
+                            <textarea name="description" id="description" required></textarea>
+                        </fieldset>
+                        <input type="hidden" id="formLoadTime" name="formLoadTime">
+                        <input type="submit" value="Propose My Course">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>©2024 Guayaquil Pacific Chamber Society</p>
+                <p>Isaac Gutierrez S.</p>
+                <p>WDD 230 Project</p>
+                <p id="lastModified"></p> 
+            </div>
+        </footer>
+    </div>
+    <script src="./scripts/lastmodified.js"></script>
+    <script src="./scripts/formdate.js"></script>
+</body>
+</html>
