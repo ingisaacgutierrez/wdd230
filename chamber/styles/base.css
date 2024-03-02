@@ -524,7 +524,7 @@ main h1{
     margin-right: 6px;
 }
 
-.f1 input[type="submit"]
+#join
 {
     border: none;
     background-image: linear-gradient(var(--secondary-color), var(--primary-color));
@@ -535,6 +535,7 @@ main h1{
     max-width: 400px;
     margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
+    font-size: 25px;
 
 }
 
