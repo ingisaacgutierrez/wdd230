@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sectorización de Seminario - Estaca Kennedy</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css"/>
+    <link rel="stylesheet" href="./styles/seminary.css">
+</head>
+<body>
+    <h1>Sectorización de Seminario - Estaca Kennedy</h1>
+    <div class="grid-form">
+        <h1>Datos del Estudiante</h1>
+        <form method="get" action="thankyou.html" class="f1">
+            <fieldset>
+                <legend>Semiarios Estaca Kennedy</legend>
+                <label>Nombre Completo<input type="text" name="fname" id="fname" required></label>
+                <label>Edad <input type="text" name="lname" id="lname" required></label>
+                <label>Direccion: <input type="text" name="edad" id="lname" required></label>                
+                <label>Link de ubicación: <input type="url" name="location_link" placeholder="https://example.com" id="location_link" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+                <label>Color de la geocerca: <input type="color" name="geofence_color" id="geofence_color" required></label>
+            </fieldset>
+        </form>
+    </div>  
+    <div id="mapid"></div>
+    <button class="button" id="create">Crear</button>
+    <button class="button" id="save">Guardar</button>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-draw/dist/leaflet.draw.js"></script>
+    <script src="./javascript/seminary.js"></script>
+</body>
+</html>
+
+
+
