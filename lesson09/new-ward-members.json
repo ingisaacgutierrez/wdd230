@@ -1,0 +1,25 @@
+{
+    "wardInformation": {
+        "LastName": "Vera",
+        "moveInDate": "2024-03-04",
+        "numberOfMembers": 3,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Luis Vera",
+                "gender": "Male",
+                "birthdate":  "1980-02-28"
+            },
+            {
+                "name": "Evelyn Vera",
+                "gender": "Feale",
+                "birthdate":  "1985-08-15"
+            },
+            {
+                "name": "Amir Vera",
+                "gender": "Male",
+                "birthdate":  "2000-05-02"
+            }
+        ]
+    }
+}
