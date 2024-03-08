@@ -1,0 +1,32 @@
+{
+    "members":
+    [
+        {
+        "name": "Soccer Players GYE",
+        "address": "Guayas, Guayaquil, Carlos Perez Perazo",
+        "phone_number": "+593 99 256 3263",
+        "website_url": "https://www.barcelonasc.com.ec/",
+        "image_file_name": "./images/soccer_players.webp",
+        "membership_level": "Bronze Membership",
+        "linkedin_url": "https://www.linkedin.com"
+        },
+        {
+            "name": "Tecno Red",
+            "address": "Guayas, Guayaquil, Sauces 8",
+            "phone_number": "+593 96 478 3698",
+            "website_url": "https://tecnoredec.com/",
+            "image_file_name": "./images/tecno_red.webp",
+            "membership_level": "Bronze Membership",
+            "linkedin_url": "https://www.linkedin.com"
+        },
+        {
+        "name": "Autorenova Rastreo Satelital",
+        "address": "Guayas, Guayaquil, Av. Juan Tanca Marengo",
+        "phone_number": "+593 89 124 2564",
+        "website_url": "https://www.autorenova.com/",
+        "image_file_name": "./images/autorenova.webp",
+        "membership_level": "Gold Membership",
+        "linkedin_url": "https://www.linkedin.com"
+        }
+    ]
+}
