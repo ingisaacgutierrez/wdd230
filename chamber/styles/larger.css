@@ -123,4 +123,21 @@
         grid-gap: 10px;
         
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #gridlist {
+        margin: 50px;
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+
+    .list .directorylist {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
 }
