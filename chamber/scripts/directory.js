@@ -20,7 +20,7 @@ function showList() {
 
 const baseURL = "https://ingisaacgutierrez.github.io/wdd230/chamber/data/members.json";
 const members_info = document.querySelector('#members_info');
-let mode = 'grid'; // Modo por defecto
+let mode = 'grid'; 
 
 async function getLinks() {
     const response = await fetch(baseURL);
@@ -29,12 +29,11 @@ async function getLinks() {
 }
 
 function displayLinks(links) {
-    members_info.innerHTML = ''; // Limpia el contenido actual
+    members_info.innerHTML = ''; 
     links.forEach(link => {
         const article = document.createElement('article');
         article.classList.add('directorylist');
 
-        // Cambia el orden de la información dependiendo del modo
         if (mode === 'grid') {
             article.innerHTML = `
                 <img src="${link.logo}" alt="${link.name}">
@@ -61,7 +60,6 @@ function displayLinks(links) {
 
 getLinks();
 
-// Actualiza el modo y vuelve a generar el contenido cuando se hace clic en los botones
 gridbutton.addEventListener("click", () => {
     mode = 'grid';
     getLinks();
