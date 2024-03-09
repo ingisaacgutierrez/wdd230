@@ -1,16 +1,14 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("#members_info"); // Actualizado a #members_info
+const display = document.querySelector("#members_info");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList); 
 
 function showList() {
 	display.classList.add("list");
@@ -20,9 +18,9 @@ function showList() {
 
 
 
-
 const baseURL = "https://ingisaacgutierrez.github.io/wdd230/chamber/data/members.json";
 const members_info = document.querySelector('#members_info');
+let mode = 'grid'; // Modo por defecto
 
 async function getLinks() {
     const response = await fetch(baseURL);
@@ -31,20 +29,31 @@ async function getLinks() {
 }
 
 function displayLinks(links) {
-    
-    
+    members_info.innerHTML = ''; // Limpia el contenido actual
     links.forEach(link => {
         const article = document.createElement('article');
         article.classList.add('directorylist');
-        article.innerHTML = `
-            <h3>${link.name}</h3>
-            <p>Address: ${link.address}</p>
-            <p>Phone Number: ${link.phone}</p>
-            <p>Website: <a href="${link.website}">${link.website}</a></p>
-            <img src="${link.logo}" alt="${link.name}">
-            <p>Membership Level: ${link.membershipLevel}</p>
-            <p>LinkedIn: <a href="${link.linkedin}">${link.linkedin}</a></p>
-        `;
+
+        // Cambia el orden de la información dependiendo del modo
+        if (mode === 'grid') {
+            article.innerHTML = `
+                <img src="${link.logo}" alt="${link.name}">
+                <p>${link.membershipLevel}</p>
+                <p>${link.address}</p>
+                <p>${link.phone}</p>
+                <p><a href="${link.linkedin}">${link.linkedin}</a></p>
+                <p><a href="${link.website}">${link.website}</a></p>
+            `;
+        } else if (mode === 'list') {
+            article.innerHTML = `
+                <h3>${link.name}</h3>
+                <p>${link.membershipLevel}</p>
+                <p>${link.address}</p>
+                <p>${link.phone}</p>
+                <p><a href="${link.linkedin}">${link.linkedin}</a></p>
+                <p><a href="${link.website}">${link.website}</a></p>
+            `;
+        }
 
         members_info.appendChild(article);
     });
@@ -52,7 +61,13 @@ function displayLinks(links) {
 
 getLinks();
 
+// Actualiza el modo y vuelve a generar el contenido cuando se hace clic en los botones
+gridbutton.addEventListener("click", () => {
+    mode = 'grid';
+    getLinks();
+});
 
-
-
-
+listbutton.addEventListener("click", () => {
+    mode = 'list';
+    getLinks();
+});
