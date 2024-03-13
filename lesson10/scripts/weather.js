@@ -2,7 +2,7 @@ const  currentTemp =  document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&appid=88ad76d96b0d83889ed4689b12810611';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=8241637a5f1b31d8d03d0fbf10f496fd';
 
 async function apiFetch() {
     try {
@@ -25,6 +25,7 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
-    captionDesc.textContent = desc;
+    weatherIcon.setAttribute('alt', desc);
+    let descCapitalized = desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    captionDesc.textContent =`${descCapitalized}`;
 }
-
