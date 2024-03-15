@@ -142,4 +142,13 @@
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
     }
+
+    #banner {
+        font-size: 20px;
+    }
+
+    #close-btn {
+        font-size: 20px;
+    }
+
 }

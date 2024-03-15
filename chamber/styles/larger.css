@@ -140,4 +140,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
+    #banner {
+        font-size: 25px;
+    }
+    #close-btn {
+        font-size: 25px;
+    }       
 }

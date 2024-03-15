@@ -705,6 +705,28 @@ img {
 	max-width: 100%; 
 }
 
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--paragraph-background-color);
+    color: var(--headline-color-on-color);
+    text-align: center;
+    z-index: 1000;
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+#close-btn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
 @-moz-document url-prefix() {
     .star-rating input:checked ~ label:before {
     font-size: 36px;
