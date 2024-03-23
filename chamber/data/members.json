@@ -33,7 +33,7 @@
             "phone": "+593 98 765 4321",
             "website": "https://www.ecotourguayaquil.ec/",
             "logo": "./images/logo_ecotour.webp",
-            "membershipLevel": "Platinum Membership",
+            "membershipLevel": "Bronze Membership",
             "linkedin": "https://www.linkedin.com/company/ecotour-guayaquil"
         },
         {
@@ -42,7 +42,7 @@
             "phone": "+593 97 123 4567",
             "website": "https://www.gytehub.ec/",
             "logo": "./images/logo_gytehub.webp",
-            "membershipLevel": "Gold Membership",
+            "membershipLevel": "Bronze Membership",
             "linkedin": "https://www.linkedin.com/company/guayaquil-tech-hub"
         },
         {
@@ -69,7 +69,7 @@
             "phone": "+593 94 567 8901",
             "website": "https://www.guayaquilrealestate.ec/",
             "logo": "./images/logo_guayaquilrealestate.webp",
-            "membershipLevel": "Platinum Membership",
+            "membershipLevel": "Bronze Membership",
             "linkedin": "https://www.linkedin.com/company/guayaquil-real-estate"
         },
         {
@@ -78,7 +78,7 @@
             "phone": "+593 93 456 7890",
             "website": "https://www.guayaquilgreen.ec/",
             "logo": "./images/logo_guayaquilgreen.webp",
-            "membershipLevel": "Silver Membership",
+            "membershipLevel": "Bronze Membership",
             "linkedin": "https://www.linkedin.com/company/guayaquil-green-energy"
         }
     ]
