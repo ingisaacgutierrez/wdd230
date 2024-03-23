@@ -26,6 +26,61 @@
             "logo": "./images/logo_autorenova.webp",
             "membershipLevel": "Gold Membership",
             "linkedin": "https://www.linkedin.com"
+        },
+        {
+            "name": "EcoTour Guayaquil",
+            "address": "Guayas, Guayaquil, Av. 9 de Octubre",
+            "phone": "+593 98 765 4321",
+            "website": "https://www.ecotourguayaquil.ec/",
+            "logo": "./images/logo_ecotour.webp",
+            "membershipLevel": "Platinum Membership",
+            "linkedin": "https://www.linkedin.com/company/ecotour-guayaquil"
+        },
+        {
+            "name": "Guayaquil Tech Hub",
+            "address": "Guayas, Guayaquil, Av. Francisco de Orellana",
+            "phone": "+593 97 123 4567",
+            "website": "https://www.gytehub.ec/",
+            "logo": "./images/logo_gytehub.webp",
+            "membershipLevel": "Gold Membership",
+            "linkedin": "https://www.linkedin.com/company/guayaquil-tech-hub"
+        },
+        {
+            "name": "Guayaquil Gourmet",
+            "address": "Guayas, Guayaquil, Av. Las Monjas",
+            "phone": "+593 96 789 0123",
+            "website": "https://www.guayaquilgourmet.ec/",
+            "logo": "./images/logo_guayaquilgourmet.webp",
+            "membershipLevel": "Silver Membership",
+            "linkedin": "https://www.linkedin.com/company/guayaquil-gourmet"
+        },
+        {
+            "name": "Guayaquil Fitness Center",
+            "address": "Guayas, Guayaquil, Av. del Bombero",
+            "phone": "+593 95 678 9012",
+            "website": "https://www.guayaquilfitness.ec/",
+            "logo": "./images/logo_guayaquilfitness.webp",
+            "membershipLevel": "Gold Membership",
+            "linkedin": "https://www.linkedin.com/company/guayaquil-fitness-center"
+        },
+        {
+            "name": "Guayaquil Real Estate",
+            "address": "Guayas, Guayaquil, Av. de las Américas",
+            "phone": "+593 94 567 8901",
+            "website": "https://www.guayaquilrealestate.ec/",
+            "logo": "./images/logo_guayaquilrealestate.webp",
+            "membershipLevel": "Platinum Membership",
+            "linkedin": "https://www.linkedin.com/company/guayaquil-real-estate"
+        },
+        {
+            "name": "Guayaquil Green Energy",
+            "address": "Guayas, Guayaquil, Av. de los Shyris",
+            "phone": "+593 93 456 7890",
+            "website": "https://www.guayaquilgreen.ec/",
+            "logo": "./images/logo_guayaquilgreen.webp",
+            "membershipLevel": "Silver Membership",
+            "linkedin": "https://www.linkedin.com/company/guayaquil-green-energy"
         }
     ]
 }
+
