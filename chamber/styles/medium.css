@@ -48,7 +48,7 @@
         overflow: hidden;
     }
 
-    .hero button {
+    .hero a {
         top: 50px; 
         left: 130px; 
         padding: 5px 15px;

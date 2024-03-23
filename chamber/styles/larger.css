@@ -47,9 +47,10 @@
         overflow: hidden;
     }
 
-    .hero button{
+    .hero a{
         top: 50px; 
         left: 175px; 
+        font-size: 40px;
     }
 
     #section1 {
