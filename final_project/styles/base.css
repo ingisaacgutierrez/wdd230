@@ -1,29 +1,274 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto&family=Unbounded:wght@200..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    box-sizing: border-box;
 }
+
+:root {
+    --primary-color: #FB8500;
+    --secondary-color: #FFB703;
+    --accent1-color: #023047;
+    --accent2-color: #8ECAE6;
+    --accent3-color: #219EBC;
+
+    --heading-font: "Unbounded";
+    --paragraph-font: MuseoModerno, Roboto, sans-serif;
+
+    --headline-color-on-white: #023047;  /* headlines on a white background */ 
+    --headline-color-on-color: #8ECAE6; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #023047; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #8ECAE6; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #023047;
+    --nav-link-color: #023047;
+    --nav-background-color: #FB8500;
+    --nav-hover-link-color: #023047;
+    --nav-hover-background-color: #FFB703;
+
+    --font-size: 14px;
+    --margin: 10px; /* margin and padding value */
+}
+
+/* general styles */
+body {
+    font-family: var(--paragraph-font);
+    background-color: #f0f0f0;
+}
+
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.header {
+
+/* header section */
+header {
+    background-color: var(--accent1-color);
+    color: var(--headline-color-on-color);
     text-align: center;
-    margin-bottom: 20px;
 }
-.weather {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 20px;
+
+#header {
+    display: inline-block;
+    margin-top: 25px;
 }
-.closeable-message {
-    background-color: #ffcccb;
-    color: #d8000c;
-    padding: 10px;
+
+.img-logo img {
+    width: 75px;
+    height: auto;
+}
+
+.scoots-name h1 {
+    font-family: var(--heading-font);
+    font-size: 2em;
+}
+
+.img-logo,
+.scoots-name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img-logo img,
+.scoots-name h1 {
+    display: inline;
+    margin-right: 10px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Social media section */
+#social-media {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: var(--margin);
+    
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Navigation section */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-background-color);
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    padding: var(--margin);
+    display: block;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+/* main section*/
+.hero {
+    position: relative;
     text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: var(--nav-link-color);
+    padding: 20px 70px;
+    text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
+    font-family: var(--heading-font);
+    border-radius: 15px;
+}
+
+.hero .button:hover{
+    background-color: var(--nav-hover-link-color);
+    color: var(--nav-hover-background-color);
+}
+
+.hero p {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: var(--accent1-color);
+    padding: var(--margin);
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    font-family: var(--heading-font);
+}
+
+/* rental section */
+#rentals {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    text-align: center;
+}
+
+#rentals,
+.honda_sect,
+.atvs_sect,
+.jeep_sect {
+    padding: var(--margin);
+}
+
+#rentals h2,
+.honda_sect h2,
+.atvs_sect h2,
+.jeep_sect h2 {
+    color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
+}
+
+#honda_img img,
+#atvs_img img,
+#jeep_img img {
+    max-width: 100%;
+    height: 400px; 
+}
+
+
+.honda_sect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#honda {
+    text-align: left;
+    flex: 1;
+}
+
+#honda_img {
+    flex: 1;
+    text-align: right;
+    
+}
+
+.atvs_sect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#atvs {
+    text-align: right;
+    flex: 1;
+}
+
+#atvs_img {
+    flex: 1;
+    text-align: left;
+}
+
+.jeep_sect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#jeep {
+    text-align: left;
+    flex: 1;
+}
+
+#jeep_img {
+    flex: 1;
+    text-align: right;
+}
+
+.button-sect {
+    
+    color: var(--nav-link-color);
+  
+}
+
+.button-sect:hover {
+    color: var(--nav-hover-background-color);
+}
+
+/* footer section*/
+footer {
+    background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+    padding: var(--margin);
 }

@@ -1,0 +1,113 @@
+{
+    "max_rental_pricing": 
+    [
+        {
+            "rental_category": "Scooters",
+            "rental_types": 
+            [
+                {
+                    "rental_type": "Honda Metro Scooter",
+                    "max_persons": 1,
+                    "reservation": 
+                        {
+                            "half_day": "$20",
+                            "full_day": "$30"
+                        },
+                    "walk_in": 
+                        {
+                            "half_day": "$25",
+                            "full_ay": "$35"
+                        },
+                    "imgurl":
+                },
+                {
+                    "rental_type": "Honda Dio Scooter",
+                    "max_persons": 2,
+                    "reservation": 
+                        {
+                            "half_day": "$30",
+                            "full_day": "$40"
+                        },
+                    "walk_in": 
+                        {
+                            "half_day": "$35",
+                            "full_ay": "$45"
+                        },
+                    "imgurl":
+                },
+                {
+                    "rental_type": "Honda PCX150 Scooter",
+                    "max_persons": 2,
+                    "reservation": 
+                    {
+                        "half_day": "$40",
+                        "full_day": "$50"
+                    },
+                    "walk_in": 
+                        {
+                            "half_day": "$45",
+                            "full_ay": "$55"
+                        },
+                    "imgurl":
+                }
+            ]
+        },
+        {
+            "rental_category": "ATVs",
+            "rental_types": 
+            [
+                {
+                    "rental_type": "Honda Pioneer ATV",
+                    "max_persons": 4,
+                    "reservation": 
+                        {
+                            "half_day": "$50",
+                            "full_day": "$70"
+                        },
+                    "walk_in": 
+                        {
+                            "half_day": "$65",
+                            "full_ay": "$80"
+                        },
+                    "imgurl":
+                }
+            ]
+        },
+        {
+            "rental_ategory": "Jeeps",
+            "rental_types": 
+            [
+                {
+                    "rental_type": "Jeep Wrangler - 4 door with a/c",
+                    "max_persons": 5,
+                    "reservation": 
+                        {
+                            "half_day": "$70",
+                            "full_day": "$100"
+                        },
+                    "walk_in": 
+                        {
+                            "half_day": "$85",
+                            "full_ay": "$125"
+                        },
+                    "imgurl":
+                },
+                {
+                    "rental_type": "Jeep Wrangler - 2 door",
+                    "max_persons": 4,
+                    "reservation": 
+                        {
+                            "half_day": "$60",
+                            "full_day": "$85"
+                        },
+                    "walk_in": 
+                        {
+                            "half_day": "$70",
+                            "full_ay": "$90"
+                        },
+                    "imgurl":
+                }
+            ]
+        }
+    ]
+}

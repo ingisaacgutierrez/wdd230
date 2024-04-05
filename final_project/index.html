@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <link rel="icon" href="">
+    <link rel="preload" href="" as="image">
     <meta name="author" content="Isaac Gutierrez">
     <meta name="description" content="We are a motor scooter rental company located on the island of 
                                     Cozumel off the coast of Mexico where we promotes friendly and easy
@@ -23,7 +24,7 @@
         <header>
             <div id="header">
                 <div class="img-logo">
-                    <img src="" alt="Scoots Cozumel Paradise">
+                    <img src="./images/cozumel_logo.webp" alt="Scoots Cozumel Paradise">
                 </div>
                 <div class="scoots-name">
                     <h1>Scoots Cozumel Paradise</h1>
@@ -33,6 +34,14 @@
                         <button id="menu"></button>
                     </div>
                 </div>
+                <section id="social-media">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><img src="./images/insta_logo.webp" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/"><img src="./images/facebook_logo.webp"alt="Facebook"></a>
+                        <a href="https://www.tiktok.com/"><img src="./images/tiktok_logo.webp" alt="Tik Tok"></a>
+                        <a href="https://www.whatsapp.com/"><img src="./images/ws_logo.webp" alt="Whastsapp"></a>
+                    </div>
+                </section>
             </div>
         </header>
         <nav>
@@ -46,12 +55,12 @@
         <main>
             <div class="hero">
                 <picture>
-                    <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
-                    <source srcset="images/hero-image-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/hero-image-large.webp" alt="Hero image test" width="1500" height="750">
+                    <source srcset="./images/hero_img_small.webp" media="(max-width: 500px)">
+                    <source srcset="./images/hero_img_medium.webp" media="(max-width: 1000px)">
+                    <img src="./images/hero_img_large.webp" alt="Hero image test" width="1500" height="750">
                 </picture>
                 <a href="./reservations.html" target="_blank" class="button">Rental Now</a>
-                <p>Welcome to our exciting island rental fleet!</p>      
+                <p>Welcome to our<br>exciting island<br>rental fleet!</p>     
             </div>
             <section id="rentals">
                 <h2>The adventure start here</h2>
@@ -66,28 +75,24 @@
                     <p>Honda Metropolitan (49cc) - 1 person</p>
                     <p>Honda Dio (110cc) - 2 person</p>
                     <p>Honda PCX150 (149cc) - 2 person</p>
-                    <a href="./rentals.html" target="_blank" class="button">See More</a>
+                    <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
                 </div>
                 <div id="honda_img">
-                    <picture>
-                        <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
-                        <source srcset="images/hero-image-medium.webp" media="(max-width: 1000px)">
-                        <img src="images/hero-image-large.webp" alt="Hero image test" width="1500" height="750">
-                    </picture>
+                    <figure>
+                        <img src="./images/scooter_picture.webp" alt="Honda Moto Scooter" loading="lazy">
+                    </figure>
                 </div>
             </section>
             <section class="atvs_sect">
                 <div id="atvs">
                     <h2>Side-by-Side ATVs</h2>
                     <p>Honda Pioneer 1000 - 4 person</p>
-                    <a href="./rentals.html" target="_blank" class="button">See More</a>
+                    <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
                 </div>
                 <div id="atvs_img">
-                    <picture>
-                        <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
-                        <source srcset="images/hero-image-medium.webp" media="(max-width: 1000px)">
-                        <img src="images/hero-image-large.webp" alt="Hero image test" width="1500" height="750">
-                    </picture>
+                    <figure>
+                        <img src="./images/atvs_picture.webp" alt="ATV" loading="lazy">
+                    </figure>
                 </div>
             </section>
             <section class="jeep_sect">
@@ -95,22 +100,12 @@
                     <h2>Jeeps</h2>
                     <p>Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
                     <p>Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
-                    <a href="./rentals.html" target="_blank" class="button">See More</a>
+                    <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
                 </div>
                 <div id="jeep_img">
-                    <picture>
-                        <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
-                        <source srcset="images/hero-image-medium.webp" media="(max-width: 1000px)">
-                        <img src="images/hero-image-large.webp" alt="Hero image test" width="1500" height="750">
-                    </picture>
-                </div>
-            </section>
-            <section id="social-media">
-                <h2>Connect with Us</h2>
-                <div class="social-icons">
-                    <a href="#"><img src="" alt="Instagram"></a>
-                    <a href="#"><img src="" alt="Facebook"></a>
-                    <a href="#"><img src="" alt="Tik Tok"></a>
+                    <figure>
+                        <img src="./images/jeep_picture.webp" alt="Jeep Picture" loading="lazy">
+                    </figure>
                 </div>
             </section>
             <section id="weather">
@@ -132,8 +127,6 @@
             <div class="footer">
                 <p>©2024 Scoots Cozumel Paradise</p>
                 <p>Cozumel - Mexico</p>
-                <p>+55 123 456 78</p>
-                <p id="lastModified"></p> 
             </div>
         </footer>   
     </div>
