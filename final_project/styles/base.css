@@ -50,11 +50,12 @@ header {
 
 #header {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 50px;
+    font-size: 12px;
 }
 
 .img-logo img {
-    width: 75px;
+    width: 50px;
     height: auto;
 }
 
@@ -96,8 +97,8 @@ header {
 	background-color: transparent;
 	color: var(--secondary-color);
     position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: 0.5rem;
+	right: 0.5rem;
 }
 
 #menu::before {
@@ -450,11 +451,15 @@ img {
 }
 
 /*table css*/
+#rental_table {
+    margin: 50px auto; 
+    max-width: 650px;
+    padding: 0.5rem;
+}
+
 #rental_table table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 50px;
-    margin-top: 50px;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
 }
@@ -464,18 +469,39 @@ img {
     padding: 8px;
     text-align: center;
 }
+
 .max_price {
     background-color: var(--secondary-color);
     font-family: var(--heading-font);
     color: var(--accent1-color);
 } 
 
-.th{
-    background-color: var(--secondary-color);
-    
-    color: var(--accent1-color);
+.th, .reservation_walk{
+    color: var(--secondary-color);
 }
+
 .reservation, .walk-in {
     font-weight: bold;
     color: #fff;
 }
+
+.rental_button {
+    display: block;
+    margin: 50px auto;
+    background-color: var(--secondary-color);
+    color: var(--nav-link-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: var(--heading-font);
+    border-radius: 5px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.rental_button:hover {
+    background-color: var(--nav-hover-link-color);
+    color: var(--nav-hover-background-color);
+}
+

@@ -20,7 +20,7 @@ function createTableFromJSON() {
                 <tr>
                     <th colspan="2"></th>
                     <th class="reservation_walk" colspan="2">Reservation</th>
-                    <th class="reservation_walk" colspan="2">Walk-iny</th>
+                    <th class="reservation_walk" colspan="2">Walk-in</th>
                 </tr>
                 <tr>
                     <th class="th" >Rental Type</th>
@@ -58,4 +58,3 @@ function createTableFromJSON() {
 }
 
 document.addEventListener('DOMContentLoaded', createTableFromJSON);
-

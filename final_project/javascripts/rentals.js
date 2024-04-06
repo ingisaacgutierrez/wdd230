@@ -16,8 +16,6 @@ function showList() {
 }
 
 
-
-
 const baseURL = "https://ingisaacgutierrez.github.io/wdd230/final_project/data/pricing.json";
 const members_info = document.querySelector('#members_info');
 let mode = 'grid'; 
