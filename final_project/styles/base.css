@@ -205,6 +205,7 @@ nav ul li a:hover {
 #rentals {
     background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
     text-align: center;
+    
 }
 
 #rentals p, h2{
@@ -347,3 +348,101 @@ footer {
     box-sizing: border-box;
 }
 
+/* Rentals section */
+#gridlist {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color: #fff;
+	font-family: var(--paragraph-font);
+}
+
+.gridlistmenu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.gridlistmenu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.directorylist {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	align-items: center;
+    margin: 25px;
+    
+}
+
+.grid .directorylist {
+	text-align: center;
+}
+
+.grid .directorylist > * {
+	margin: 0 auto;
+}
+
+.grid h3 {
+	font-family: var(--heading-font);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    margin: 25px;
+}
+
+.list .directorylist {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 5px;
+	padding: 0.25rem;
+}
+
+.list .directorylist > * {
+	margin: 0 1rem;
+}
+
+.list .directorylist img {
+	display: none;
+}
+
+.list .directorylist h3 {
+	font-size: 1rem;
+	font-family: var(--heading-font);
+}
+
+.list .directorylist:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: var(--paragraph-font);
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; 
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page - Scoots Cozumel Paradise</title>
+    <title>Rentals Page - Scoots Cozumel Paradise</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
@@ -16,7 +16,7 @@
                                     to rent services of motor scooters, jeeps, and side-by-side ATVs.">
     <meta property="og:title" content="Isaac Gutierrez - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.google.com/search?q=guayaquil+ciudad+picture&tbm=isch&ved=2ahUKEwjy3oDd_6uEAxV8BmIAHQO0CN4Q2-cCegQIABAA&oq=guayaquil+ciudad+picture&gs_lp=EgNpbWciGGd1YXlhcXVpbCBjaXVkYWQgcGljdHVyZUjzD1DdB1iZD3AAeACQAQCYAdMBoAH7CKoBBTAuNi4xuAEDyAEA-AEBigILZ3dzLXdpei1pbWfCAgQQIxgniAYB&sclient=img&ei=iU7NZbL2GPyMiLMPg-ii8A0&bih=773&biw=1600&prmd=invmbstz#imgrc=tCA8batYD_Ut4M"> 
+    <meta property="og:image" content="./images/cozumel_og_img.webp"> 
     <meta property="og:url" content="https://ingisaacgutierrez.github.io/wdd230/"> 
 </head>
 <body>
@@ -24,7 +24,7 @@
         <header>
             <div id="header">
                 <div class="img-logo">
-                    <img src="" alt="Scoots Cozumel Paradise">
+                    <img src="./images/cozumel_logo.webp" alt="Scoots Cozumel Paradise">
                 </div>
                 <div class="scoots-name">
                     <h1>Scoots Cozumel Paradise</h1>
@@ -35,35 +35,38 @@
                     </div>
                 </div>
                 <section id="social-media">
-                    <h2>Connect with Us</h2>
                     <div class="social-icons">
-                        <a href="#"><img src="" alt="Instagram"></a>
-                        <a href="#"><img src="" alt="Facebook"></a>
-                        <a href="#"><img src="" alt="Tik Tok"></a>
-                        <a href="#"><img src="" alt="Whastsapp">+55 123 456 78</a>
+                        <a href="https://www.instagram.com/"><img src="./images/insta_logo.webp" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/"><img src="./images/facebook_logo.webp"alt="Facebook"></a>
+                        <a href="https://www.tiktok.com/"><img src="./images/tiktok_logo.webp" alt="Tik Tok"></a>
+                        <a href="https://www.whatsapp.com/"><img src="./images/ws_logo.webp" alt="Whastsapp"></a>
                     </div>
                 </section>
             </div>
         </header>
-        <nav>
+        <nav class="navigation">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#" class="active">Rentals</a></li>
                 <li><a href="./reservations.html">Reservations</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <main>
-            <div class="rental_cards"></div>
+        <main id="gridlist">
+            <div class="gridlistmenu">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+            <div id="members_info" class="grid"></div>
         </main>
         <footer>
             <div class="footer">
-                <p>©2024 Guayaquil Pacific Chamber Society</p>
-                <p>Isaac Gutierrez S.</p>
-                <p>WDD 230 Project</p>
-                <p id="lastModified"></p> 
+                <p>©2024 Scoots Cozumel Paradise</p>
+                <p>Cozumel - Mexico</p>
             </div>
         </footer>   
-        <script src=""></script>
+    </div>
 </body>
+<script src="./javascripts/ham-menu.js"></script>
+<script src="./javascripts/rentals.js"></script>
 </html>
