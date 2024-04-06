@@ -15,21 +15,20 @@ function createTableFromJSON() {
         tableHTML += `
             <thead>
                 <tr>
-                    <th colspan="6">Max Rental Pricing</th>
+                    <th class="max_price" colspan="6">Max Rental Pricing</th>
                 </tr>
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th colspan="2">Reservation</th>
-                    <th colspan="2">Walk-iny</th>
+                    <th colspan="2"></th>
+                    <th class="reservation_walk" colspan="2">Reservation</th>
+                    <th class="reservation_walk" colspan="2">Walk-iny</th>
                 </tr>
                 <tr>
-                    <th>Rental Type</th>
-                    <th>Max Persons</th>
-                    <th>Half Day</th>
-                    <th>Full Day</th>
-                    <th>Half Day</th>
-                    <th>Full Day</th>
+                    <th class="th" >Rental Type</th>
+                    <th class="th" >Max Persons</th>
+                    <th class="th" >Half Day</th>
+                    <th class="th" >Full Day</th>
+                    <th class="th" >Half Day</th>
+                    <th class="th" >Full Day</th>
                 </tr>
             </thead>
         `;

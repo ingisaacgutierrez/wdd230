@@ -450,10 +450,13 @@ img {
 }
 
 /*table css*/
-/* Estilos para la tabla */
 #rental_table table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 
 #rental_table th, #rental_table td {
@@ -461,22 +464,18 @@ img {
     padding: 8px;
     text-align: center;
 }
+.max_price {
+    background-color: var(--secondary-color);
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+} 
 
-#rental_table th {
-    background-color: #f4f4f4;
-    color: #333;
+.th{
+    background-color: var(--secondary-color);
+    
+    color: var(--accent1-color);
 }
-
-/* Estilos específicos para las celdas de precios */
 .reservation, .walk-in {
     font-weight: bold;
     color: #fff;
-}
-
-.reservation {
-    background-color: #4CAF50; /* Verde */
-}
-
-.walk-in {
-    background-color: #f44336; /* Rojo */
 }
