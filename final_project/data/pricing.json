@@ -78,21 +78,6 @@
             "rental_types": 
             [
                 {
-                    "rental_type": "Jeep Wrangler - 4 door with a/c",
-                    "max_persons": 5,
-                    "reservation": 
-                        {
-                            "half_day": "$70",
-                            "full_day": "$100"
-                        },
-                    "walk_in": 
-                        {
-                            "half_day": "$85",
-                            "full_day": "$125"
-                        },
-                    "imgurl":"./images/jeep_fourdoor_ac.webp"
-                },
-                {
                     "rental_type": "Jeep Wrangler - 2 door",
                     "max_persons": 4,
                     "reservation": 
@@ -106,6 +91,21 @@
                             "full_day": "$90"
                         },
                     "imgurl":"./images/jeep_twodoor.webp"
+                },
+                {
+                    "rental_type": "Jeep Wrangler - 4 door with a/c",
+                    "max_persons": 5,
+                    "reservation": 
+                        {
+                            "half_day": "$70",
+                            "full_day": "$100"
+                        },
+                    "walk_in": 
+                        {
+                            "half_day": "$85",
+                            "full_day": "$125"
+                        },
+                    "imgurl":"./images/jeep_fourdoor_ac.webp"
                 }
             ]
         }

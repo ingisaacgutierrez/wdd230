@@ -25,38 +25,34 @@ let mode = 'grid';
 async function getLinks() {
     const response = await fetch(baseURL);
     const data = await response.json();
-    displayLinks(data.members);
+    displayLinks(data.max_rental_pricing);
 }
 
 function displayLinks(links) {
     members_info.innerHTML = ''; 
     links.forEach(link => {
-        const article = document.createElement('article');
-        article.classList.add('directorylist');
+        link.rental_types.forEach(type => {
+            const article = document.createElement('article');
+            article.classList.add('rental_list');
 
-        if (mode === 'grid') {
-            article.innerHTML = `
-                <img src="${link.imgurl}" alt="${link.rental_type}">
-                <p>${link.max_persons}</p>
-                <p>${link.reservation.half_day}</p>
-                <p>${link.reservation.full_day}</p>
-                <p>${link.walk_in.half_day}</p>
-                <p>${link.walk_in.full_day}</p>
-            `;
-        } else if (mode === 'list') {
-            article.innerHTML = `
-                <h3>${link.rental_type}</h3>
-                <p>${link.max_persons}</p>
-                <p>${link.reservation.half_day}</p>
-                <p>${link.reservation.full_day}</p>
-                <p>${link.walk_in.half_day}</p>
-                <p>${link.walk_in.full_day}</p>
-            `;
-        }
+            if (mode === 'grid') {
+                article.innerHTML = `
+                    <img src="${type.imgurl}" alt="${type.rental_type}">
+                    <h3>${type.rental_type}</h3>
+                    <p>Max people: ${type.max_persons}</p>
+                `;
+            } else if (mode === 'list') {
+                article.innerHTML = `
+                    <h3>${type.rental_type}</h3>
+                    <p>Max people: ${type.max_persons}</p>
+                `;
+            }
 
-        members_info.appendChild(article);
+            members_info.appendChild(article);
+        });
     });
 }
+
 
 getLinks();
 

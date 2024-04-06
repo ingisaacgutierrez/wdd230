@@ -349,12 +349,20 @@ footer {
 }
 
 /* Rentals section */
+#rental_info{
+    text-align: center;
+    color: var(--accent1-color);
+    padding: 15px;
+}
+
+
 #gridlist {
 	margin: 0 auto;
 	padding: 0.5rem;
 	max-width: 700px;
-	background-color: #fff;
+	background-color: #eee;
 	font-family: var(--paragraph-font);
+    color: var(--accent1-color);
 }
 
 .gridlistmenu {
@@ -368,11 +376,12 @@ footer {
 	font-weight: 700;
 }
 
-.directorylist {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
+.rental_list {
+	border: 1px solid var(--secondary-color);
+	padding: 10px;
 	background-color: #eee;
-    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    box-shadow: 0 12px 14px var(--accent1-color), 0 6px 20px 0 var(--accent1-color);
 }
 
 .grid {
@@ -384,11 +393,11 @@ footer {
     
 }
 
-.grid .directorylist {
+.grid .rental_list {
 	text-align: center;
 }
 
-.grid .directorylist > * {
+.grid .rental_list > * {
 	margin: 0 auto;
 }
 
@@ -402,28 +411,28 @@ footer {
     margin: 25px;
 }
 
-.list .directorylist {
+.list .rental_list {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 5px;
 	padding: 0.25rem;
 }
 
-.list .directorylist > * {
+.list .rental_list > * {
 	margin: 0 1rem;
 }
 
-.list .directorylist img {
+.list .rental_list img {
 	display: none;
 }
 
-.list .directorylist h3 {
+.list .rental_list h3 {
 	font-size: 1rem;
 	font-family: var(--heading-font);
 }
 
-.list .directorylist:nth-child(even) {
-	background-color: #bed;
+.list .rental_list:nth-child(even) {
+	background-color: #ffb80380;
 }
 
 section h3 {
@@ -435,14 +444,39 @@ section p {
 	font-size: smaller;
 }
 
-section a {
-	font-family: var(--paragraph-font);
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
-
 img {
 	height: 75px;
 	max-width: 100%; 
+}
+
+/*table css*/
+/* Estilos para la tabla */
+#rental_table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#rental_table th, #rental_table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#rental_table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos específicos para las celdas de precios */
+.reservation, .walk-in {
+    font-weight: bold;
+    color: #fff;
+}
+
+.reservation {
+    background-color: #4CAF50; /* Verde */
+}
+
+.walk-in {
+    background-color: #f44336; /* Rojo */
 }
