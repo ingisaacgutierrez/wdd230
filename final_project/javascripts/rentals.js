@@ -36,21 +36,21 @@ function displayLinks(links) {
 
         if (mode === 'grid') {
             article.innerHTML = `
-                <img src="${link.logo}" alt="${link.name}">
-                <p>${link.membershipLevel}</p>
-                <p>${link.address}</p>
-                <p>${link.phone}</p>
-                <p><a href="${link.linkedin}">${link.linkedin}</a></p>
-                <p><a href="${link.website}">${link.website}</a></p>
+                <img src="${link.imgurl}" alt="${link.rental_type}">
+                <p>${link.max_persons}</p>
+                <p>${link.reservation.half_day}</p>
+                <p>${link.reservation.full_day}</p>
+                <p>${link.walk_in.half_day}</p>
+                <p>${link.walk_in.full_day}</p>
             `;
         } else if (mode === 'list') {
             article.innerHTML = `
-                <h3>${link.name}</h3>
-                <p>${link.membershipLevel}</p>
-                <p>${link.address}</p>
-                <p>${link.phone}</p>
-                <p><a href="${link.linkedin}">${link.linkedin}</a></p>
-                <p><a href="${link.website}">${link.website}</a></p>
+                <h3>${link.rental_type}</h3>
+                <p>${link.max_persons}</p>
+                <p>${link.reservation.half_day}</p>
+                <p>${link.reservation.full_day}</p>
+                <p>${link.walk_in.half_day}</p>
+                <p>${link.walk_in.full_day}</p>
             `;
         }
 
