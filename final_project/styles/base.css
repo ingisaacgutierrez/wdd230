@@ -209,6 +209,9 @@ nav ul li a:hover {
     
 }
 
+#rentals h2{
+    font-family: var(--heading-font);
+}
 #rentals p, h2{
     padding: var(--margin);
     color: var(--headline-color-on-white);
@@ -240,10 +243,12 @@ nav ul li a:hover {
 
 .description h2 {
     color: white;
+    font-family: var(--heading-font);
 }
 
 .description a{
     color: var(--primary-color);
+    font-family: var(--heading-font);
 }
 
 .description {
@@ -303,6 +308,7 @@ nav ul li a:hover {
     border-radius: 5px;
     padding: 10px;
     color: var(--accent1-color);
+    font-family: var(--heading-font);
 }
 
 .weather p {
@@ -356,6 +362,9 @@ footer {
     padding: 15px;
 }
 
+#rental_info h1{
+    font-family: var(--heading-font);
+}
 
 #gridlist {
 	margin: 0 auto;
@@ -505,3 +514,117 @@ img {
     color: var(--nav-hover-background-color);
 }
 
+/*form css*/
+.agreements{
+    margin: 50px;
+    border: 1px solid var(--accent1-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+.agreements h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+.agreements ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    color: var(--accent1-color);
+    margin-bottom: 10px;
+}
+
+.grid-form h1{
+    margin-left: 50px;
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+    margin-bottom: -20px;
+    font-size: 20px;
+}
+
+.rental_form legend{
+    color: var(--accent1-color);
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    border: 1px solid var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+fieldset {
+    border: 1px dashed var(--accent1-color);
+    box-shadow: 0 0 10px var(--accent1-color);
+    margin: 50px;
+    color: var(--accent1-color);
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    color: var(--accent1-color);
+    margin-top: 15px;
+}
+
+.rental_form input{
+    margin-bottom: 10px;
+}
+
+input:required, select:required, textarea:required {
+    border-bottom: 2px solid red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-bottom: 2px solid green;
+}
+
+#reserve_bt {
+    display: block;
+    margin:50px;
+    background-color: var(--secondary-color);
+    color: var(--nav-link-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: var(--heading-font);
+    border-radius: 5px;
+    text-align: center;
+    max-width: 200px;
+}
+
+#reserve_bt:hover {
+    background-color: var(--nav-hover-link-color);
+    color: var(--nav-hover-background-color);
+}
+
+/*Confirmation message css*/
+#message h1{
+    text-align: center;
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+}
+
+#message p{
+    text-align: center;
+    color: var(--accent1-color);
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+}
+
+#message img{
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
+
+#message #code_num{
+    width: 100%;
+    font-size: 25px;
+    font-family: var(--heading-font);
+    margin: 50px;
+    background-color: #FFB703;
+    padding: 10px 20px;
+    max-width: 200px;
+    text-align: center;
+
+}

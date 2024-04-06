@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations Page - Scoots Cozumel Paradise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="icon" href="">
+    <link rel="preload" href="" as="image">
+    <meta name="author" content="Isaac Gutierrez">
+    <meta name="description" content="We are a motor scooter rental company located on the island of 
+                                    Cozumel off the coast of Mexico where we promotes friendly and easy
+                                    to rent services of motor scooters, jeeps, and side-by-side ATVs.">
+    <meta property="og:title" content="Isaac Gutierrez - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/search?q=guayaquil+ciudad+picture&tbm=isch&ved=2ahUKEwjy3oDd_6uEAxV8BmIAHQO0CN4Q2-cCegQIABAA&oq=guayaquil+ciudad+picture&gs_lp=EgNpbWciGGd1YXlhcXVpbCBjaXVkYWQgcGljdHVyZUjzD1DdB1iZD3AAeACQAQCYAdMBoAH7CKoBBTAuNi4xuAEDyAEA-AEBigILZ3dzLXdpei1pbWfCAgQQIxgniAYB&sclient=img&ei=iU7NZbL2GPyMiLMPg-ii8A0&bih=773&biw=1600&prmd=invmbstz#imgrc=tCA8batYD_Ut4M"> 
+    <meta property="og:url" content="https://ingisaacgutierrez.github.io/wdd230/"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="header">
+                <div class="img-logo">
+                    <img src="./images/cozumel_logo.webp" alt="Scoots Cozumel Paradise">
+                </div>
+                <div class="scoots-name">
+                    <h1>Scoots Cozumel Paradise</h1>
+                </div>
+                <div class="right-section">
+                    <div class="hamburger-menu">
+                        <button id="menu"></button>
+                    </div>
+                </div>
+                <section id="social-media">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><img src="./images/insta_logo.webp" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/"><img src="./images/facebook_logo.webp"alt="Facebook"></a>
+                        <a href="https://www.tiktok.com/"><img src="./images/tiktok_logo.webp" alt="Tik Tok"></a>
+                        <a href="https://www.whatsapp.com/"><img src="./images/ws_logo.webp" alt="Whastsapp"></a>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="#" class="active">Reservations</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="message">
+            <h1>You Rock!</h1>
+            <p>Save the following code because with this your reservation will be validated at the moment of picking up your 
+                scooter, we are very excited about the new adventure you will live. Thank you very much. Remember that you 
+                can always contact us on our social networks for any query.</p>
+            <p id="code_num"></p>
+            <img src="./images/new_adventure.webp" alt="New adventure" loading="lazy">
+        </main>
+        <footer>
+            <div class="footer">
+                <p>©2024 Scoots Cozumel Paradise</p>
+                <p>Cozumel - Mexico</p>
+            </div>
+        </footer>   
+    </div>
+</body>
+<script src="./javascripts/ham-menu.js"></script>
+<script src="./javascripts/generate_code.js"></script>
+</html>
