@@ -5,7 +5,6 @@ function updateWeather() {
     .then(response => response.json())
     .then(data => {
       const weatherData = data.list[0];
-      // Construye la URL del ícono usando el código del ícono proporcionado por la API
       const iconUrl = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
       const weatherInfo = `
         <div>Current Temperature: ${weatherData.main.temp}°F</div><br>

@@ -257,7 +257,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Alinea los botones prev y next con las imágenes */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -270,15 +269,15 @@ nav ul li a:hover {
     transition: 0.6s ease;
     user-select: none;
     background-color: #fb86008e;
-    z-index: 2; /* Asegúrate de que estén por encima de las imágenes */
+    z-index: 2; 
 }
 
 .prev {
-    left: 3px; /* Alinea con el borde izquierdo de la imagen */
+    left: 3px;
 }
 
 .next {
-    right: 3px; /* Alinea con el borde derecho de la imagen */
+    right: 3px;
 }
 
 
