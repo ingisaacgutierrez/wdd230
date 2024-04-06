@@ -44,7 +44,7 @@
                 </section>
             </div>
         </header>
-        <nav>
+        <nav class="navigation">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="./rentals.html">Rentals</a></li>
@@ -53,6 +53,10 @@
             </ul>
         </nav>
         <main>
+            <div class="high-temp-message">
+                <span class="closebtn" onclick="closeHighTempMessage()">❌</span>
+                The high temperature today is <span id="high-temp">Cargando...</span>
+            </div>
             <div class="hero">
                 <picture>
                     <source srcset="./images/hero_img_small.webp" media="(max-width: 500px)">
@@ -62,16 +66,12 @@
                 <a href="./reservations.html" target="_blank" class="button">Rental Now</a>
                 <p>Welcome to our<br>exciting island<br>rental fleet!</p>     
             </div>
-            <div class="high-temp-message">
-                <span class="closebtn" onclick="closeHighTempMessage()">❌</span>
-                La temperatura máxima para hoy es: <span id="high-temp">Cargando...</span>
-            </div>
             <section id="rentals">
                 <h2>The adventure start here</h2>
                 <p>Do you want to explore Cozumel Island like never before? Or would you like to feel the 
                     warm breeze as you ride around the island? Our scooters will take you to discover hidden 
                     gems, visit local spots, and explore ancient ruins on the island</p>
-                <p>Our Scooters Collection</p>
+                <p class="arrows"> Our Scooters Collection </p>
             </section>
             <div class="carousel">
                 <div class="slides">
@@ -109,7 +109,7 @@
             <div class="weather-container">
                 <section class="weather">
                     <h2>Weather</h2>
-                    <p id="weather-info">Cargando...</p>
+                    <p id="weather-info"></p>
                 </section>
             </div>
         </main>
@@ -123,4 +123,5 @@
 </body>
 <script src="./javascripts/type_of_rental.js"></script>
 <script src="./javascripts/weather.js"></script>
+<script src="./javascripts/ham-menu.js"></script>
 </html>
