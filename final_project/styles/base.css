@@ -178,91 +178,135 @@ nav ul li a:hover {
 
 /* rental section */
 #rentals {
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
     text-align: center;
 }
 
-#rentals,
-.honda_sect,
-.atvs_sect,
-.jeep_sect {
+#rentals p, h2{
     padding: var(--margin);
 }
 
 #rentals h2,
-.honda_sect h2,
-.atvs_sect h2,
-.jeep_sect h2 {
+.description {
     color: var(--headline-color-on-white);
     font-family: var(--heading-font);
 }
 
-#honda_img img,
-#atvs_img img,
-#jeep_img img {
-    max-width: 100%;
-    height: 400px; 
+.description {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-
-.honda_sect {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.carousel {
+    padding: var(--margin);
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
 }
 
-#honda {
-    text-align: left;
-    flex: 1;
+.slides .slide {
+    position: relative;
+    display: none;
 }
 
-#honda_img {
-    flex: 1;
-    text-align: right;
-    
+.slides .slide img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #023047; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.atvs_sect {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
+.description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-#atvs {
-    text-align: right;
-    flex: 1;
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: var(--accent1-color);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: var(--nav-background-color);
 }
 
-#atvs_img {
-    flex: 1;
-    text-align: left;
+.prev {
+    left: 0;
 }
 
-.jeep_sect {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#jeep {
-    text-align: left;
-    flex: 1;
-}
-
-#jeep_img {
-    flex: 1;
-    text-align: right;
+.next {
+    right: 0;
 }
 
 .button-sect {
-    
     color: var(--nav-link-color);
-  
 }
 
 .button-sect:hover {
     color: var(--nav-hover-background-color);
+}
+
+.weather-container {
+    position: relative;
+    width: 80%; 
+    max-width: 600px; 
+    margin: auto; 
+    margin-bottom: 10px;
+    padding: 20px;
+    color: var(--accent1-color);
+    background-color: white; 
+    border: 5px;
+    border-color: var(--nav-hover-background-color); 
+}
+
+.weather h2{
+    background-color: var(--nav-hover-background-color); 
+    border-radius: 10px;
+}
+
+#weather {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.high-temp-message {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: #f44336; 
+    color: white; 
+    padding: 10px;
+    text-align: center;
+    z-index: 10; 
+}
+
+  /* Botón para cerrar el mensaje */
+.closebtn {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 /* footer section*/
