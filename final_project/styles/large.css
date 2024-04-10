@@ -190,6 +190,11 @@
         margin-top: 50px;
         margin-bottom: 50px;
         padding: 25px;
+        width: 90%;
+    }
+
+    .agreements-contact, .map_one, .map_two{
+        width: 90%;
     }
 
     .agreements-contact h2{
