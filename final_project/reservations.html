@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <link rel="icon" href="./favicon-project.ico">
-    <link rel="preload" href="" as="image">
     <meta name="author" content="Isaac Gutierrez">
     <meta name="description" content="We are a motor scooter rental company located on the island of 
                                     Cozumel off the coast of Mexico where we promotes friendly and easy
@@ -34,14 +33,14 @@
                         <button id="menu"></button>
                     </div>
                 </div>
-                <section id="social-media">
+                <div id="social-media">
                     <div class="social-icons">
                         <a href="https://www.instagram.com/"><img src="./images/insta_logo.webp" alt="Instagram"></a>
-                        <a href="https://www.facebook.com/"><img src="./images/facebook_logo.webp"alt="Facebook"></a>
+                        <a href="https://www.facebook.com/"><img src="./images/facebook_logo.webp" alt="Facebook"></a>
                         <a href="https://www.tiktok.com/"><img src="./images/tiktok_logo.webp" alt="Tik Tok"></a>
                         <a href="https://www.whatsapp.com/"><img src="./images/ws_logo.webp" alt="Whastsapp"></a>
                     </div>
-                </section>
+                </div>
             </div>
         </header>
         <nav class="navigation">
@@ -95,6 +94,7 @@
                             <legend>Rental Information</legend>
                             <label for="scooter">Scooter:</label><br>
                             <select id="scooter" name="scooter" required>
+                                <option value="" label="Select a scooter"></option>
                                 <option value="honda_metropolitan">Honda Metropolitan (49cc) - 1 person</option>
                                 <option value="honda_dio">Honda Dio (110cc) - 2 person</option>
                                 <option value="honda_pcx150">Honda PCX150 (149cc) - 2 person</option>
@@ -102,10 +102,10 @@
                                 <option value="jeep_wrangler_ac">Jeep Wrangler - 4 door manual with A/C - 5 person</option>
                                 <option value="jeep_wrangler_open">Jeep Wrangler - 2 door - open air - manual - 4 person</option>
                             </select><br>
-                            <label for="period">Period:</label><br>
+                            <label>Period:</label><br>
                             <input type="date" id="start" name="start" required>
                             <input type="date" id="end" name="end" required><br>
-                            <label for="rental">Rental Type:</label><br>
+                            <label>Rental Type:</label><br>
                             <input type="radio" id="halfday" name="rental" value="halfday">
                             <label for="halfday">Half Day</label>
                             <input type="radio" id="fullday" name="rental" value="fullday">
@@ -117,6 +117,7 @@
                         <button id="reserve_bt" type="submit" value="reserve a scooter">Reserve Now</button>
                     </form>
                 </div>
+            </div>
         </main>
         <footer>
             <div class="footer">
@@ -125,6 +126,6 @@
             </div>
         </footer>   
     </div>
+    <script src="./javascripts/ham-menu.js"></script>
 </body>
-<script src="./javascripts/ham-menu.js"></script>
 </html>
