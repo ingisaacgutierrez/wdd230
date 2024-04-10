@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="./favicon-project.ico">
     <link rel="preload" href="" as="image">
     <meta name="author" content="Isaac Gutierrez">
     <meta name="description" content="We are a motor scooter rental company located on the island of 
@@ -63,7 +63,7 @@
                     <source srcset="./images/hero_img_medium.webp" media="(max-width: 1000px)">
                     <img src="./images/hero_img_large.webp" alt="Hero image test" width="1500" height="750">
                 </picture>
-                <a href="./reservations.html" target="_blank" class="button">Book Now</a>
+                <a href="./reservations.html" class="button">Book Now</a>
                 <p>Welcome to our<br>exciting island<br>rental fleet!</p>     
             </div>
             <section id="rentals">
@@ -73,44 +73,46 @@
                     gems, visit local spots, and explore ancient ruins on the island</p>
                 <p class="arrows"> Our Scooters Collection </p>
             </section>
-            <div class="carousel">
-                <div class="slides">
-                    <div class="slide" id="slide1">
-                        <img src="./images/scooter_picture.webp" alt="Honda Moto Scooter" loading="lazy">
-                        <div class="description">
-                            <h2>Honda Moto Scooters</h2>
-                            <p>Honda Metropolitan (49cc) - 1 person</p>
-                            <p>Honda Dio (110cc) - 2 person</p>
-                            <p>Honda PCX150 (149cc) - 2 person</p>
-                            <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
+            <div class="container-homepage">
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="slide" id="slide1">
+                            <img src="./images/scooter_picture.webp" alt="Honda Moto Scooter" loading="lazy">
+                            <div class="description">
+                                <h2>Honda Moto Scooters</h2>
+                                <p>Honda Metropolitan (49cc) - 1 person</p>
+                                <p>Honda Dio (110cc) - 2 person</p>
+                                <p>Honda PCX150 (149cc) - 2 person</p>
+                                <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide" id="slide2">
-                        <img src="./images/atvs_picture.webp" alt="ATV" loading="lazy">
-                        <div class="description">
-                            <h2>Side-by-Side ATVs</h2>
-                            <p>Honda Pioneer 1000 - 4 person</p>
-                            <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
+                        <div class="slide" id="slide2">
+                            <img src="./images/atvs_picture.webp" alt="ATV" loading="lazy">
+                            <div class="description">
+                                <h2>Side-by-Side ATVs</h2>
+                                <p>Honda Pioneer 1000 - 4 person</p>
+                                <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide" id="slide3">
-                        <img src="./images/jeep_picture.webp" alt="Jeep Picture" loading="lazy">
-                        <div class="description">
-                            <h2>Jeeps</h2>
-                            <p>Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
-                            <p>Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
-                            <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
+                        <div class="slide" id="slide3">
+                            <img src="./images/jeep_picture.webp" alt="Jeep Picture" loading="lazy">
+                            <div class="description">
+                                <h2>Jeeps</h2>
+                                <p>Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
+                                <p>Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
+                                <a href="./rentals.html" target="_blank" class="button-sect">See More</a>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-            </div>
-            <div class="weather-container">
-                <section class="weather">
-                    <h2>Weather</h2>
-                    <p id="weather-info"></p>
-                </section>
+                        </div>
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+                <div class="weather-container">
+                    <section class="weather">
+                        <h2>Weather</h2>
+                        <p id="weather-info"></p>
+                    </section>
+                </div>
             </div>
         </main>
         <footer>

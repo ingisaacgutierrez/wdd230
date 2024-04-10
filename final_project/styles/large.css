@@ -1,0 +1,99 @@
+@media (min-width: 1025px) {
+    
+    .container {
+        max-width: 100%;
+    }
+
+    #header {
+        font-size: 25px;
+    }
+
+    .img-logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        padding: 7px;
+    }
+
+    nav ul{
+        display: flex;
+        font-size: 25px;
+        justify-content:space-around;
+    }
+
+    .hero .button {
+        padding: 20px 50px;
+        font-size: 30px;
+        right: 100px;
+        bottom: 100px;
+    }
+
+    .hero p{
+        font-size: 80px;
+        left: 23%;
+    }
+
+    #rentals h2{
+        font-size: 35px;
+        padding: 30px;
+    }
+
+    #rentals p{
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    .container-homepage {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 50px; 
+        margin: 50px;
+    }
+    
+    .carousel, .weather-container {
+        max-width: 800px; 
+        max-height: 500px; 
+    }
+    
+    .carousel{
+        margin-bottom: 25px;
+    }
+
+    .carousel img {
+        max-width: 800px; 
+        max-height: 500px; 
+    }
+    
+    .description{
+        bottom: -20px;
+    }
+
+    .weather h2 {
+        font-size: 35px;
+    }
+
+    .weather p {
+        font-size: 25px;
+    }
+
+    .high-temp-message {
+        font-size: 30px;
+    }
+
+    .closebtn {
+        font-size: 30px;
+    }
+    
+    footer{
+        font-size: 30px;
+        padding: 50px;
+    }
+
+}
