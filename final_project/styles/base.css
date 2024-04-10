@@ -534,7 +534,7 @@ img {
     margin-bottom: 10px;
 }
 
-.grid-form h1{
+.grid-form h1 {
     margin-left: 50px;
     color: var(--accent1-color);
     font-family: var(--heading-font);
@@ -542,7 +542,7 @@ img {
     font-size: 20px;
 }
 
-.rental_form legend{
+.rental_form legend {
     color: var(--accent1-color);
     padding: 0.5rem;
     background-color: var(--secondary-color);
@@ -558,6 +558,31 @@ fieldset {
     color: var(--accent1-color);
 }
 
+
+fieldset input[type="text"],
+fieldset input[type="date"],
+fieldset input[type="email"],
+fieldset input[type="tel"],
+fieldset select,
+fieldset textarea {
+    width: 60%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+fieldset select {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+
 label {
     display: inline-block;
     width: 200px;
@@ -565,16 +590,20 @@ label {
     margin-top: 15px;
 }
 
-.rental_form input{
+.rental_form input {
     margin-bottom: 10px;
 }
 
-input:required, select:required, textarea:required {
-    border-bottom: 2px solid red;
+input:required,
+select:required,
+textarea:required {
+    border-color: red;
 }
 
-input:valid, select:valid, textarea:valid {
-    border-bottom: 2px solid green;
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
 }
 
 #reserve_bt {
@@ -597,34 +626,135 @@ input:valid, select:valid, textarea:valid {
     color: var(--nav-hover-background-color);
 }
 
-/*Confirmation message css*/
-#message h1{
+/* Confirmation message CSS */
+#message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    padding: 20px;
+}
+
+#message h1 {
     color: var(--accent1-color);
     font-family: var(--heading-font);
 }
 
-#message p{
-    text-align: center;
+#message p {
     color: var(--accent1-color);
     font-family: var(--paragraph-font);
     font-size: 20px;
 }
 
-#message img{
-    width: 50%;
+#message img {
+    width: 70%;
     height: auto;
-    justify-content: center;
+    max-width: 100%;
+    padding: 20px;
 }
 
-#message #code_num{
-    width: 100%;
+#code_num {
     font-size: 25px;
     font-family: var(--heading-font);
-    margin: 50px;
     background-color: #FFB703;
-    padding: 10px 20px;
-    max-width: 200px;
-    text-align: center;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 
+/*Contact us*/
+#maps h1{
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 25px;
+}
+
+#maps h2{
+    text-align: left;
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    font-size: 15px;
+}
+
+/* Contact us */
+#maps {
+    text-align: center;
+    margin: 50px;
+}
+
+.map_one, .map_two {
+    margin: 30px auto;
+    max-width: 500px;
+}
+
+.map-iframe {
+    width: 100%; 
+    height: 450px; 
+    border: 0; 
+    margin-bottom: 30px;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow:  0 12px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form h1{
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+.form label {
+    font-weight: bold;
+}
+
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form input:required,
+.form textarea:required {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+#contact_bt {
+    display: block;
+    margin: 50px auto;
+    background-color: var(--secondary-color);
+    color: var(--nav-link-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: var(--heading-font);
+    border-radius: 5px;
+    text-align: center;
+    max-width: 200px;
+}
+
+#contact_bt:hover {
+    background-color: var(--nav-hover-link-color);
+    color: var(--nav-hover-background-color);
 }
