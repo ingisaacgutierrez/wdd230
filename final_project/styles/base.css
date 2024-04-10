@@ -664,6 +664,29 @@ textarea:valid {
 }
 
 /* Contact us */
+.agreements-contact{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid var(--accent1-color);
+    padding: 15px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.agreements-contact h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+.agreements-contact ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    color: var(--accent1-color);
+    margin-bottom: 10px;
+}
+
 #maps {
     text-align: center;
     margin: 50px;
@@ -671,7 +694,7 @@ textarea:valid {
 
 .map_one, .map_two {
     margin: 30px auto;
-    max-width: 500px;
+    width: 500px;
 }
 
 .map-iframe {
@@ -683,7 +706,7 @@ textarea:valid {
 
 .form {
     width: 100%;
-    max-width: 500px;
+    width: 500px;
     margin: 0 auto;
     padding: 50px;
     border-radius: 8px;
@@ -736,7 +759,7 @@ textarea:valid {
     font-family: var(--heading-font);
     border-radius: 5px;
     text-align: center;
-    max-width: 200px;
+    width: 200px;
 }
 
 #contact_bt:hover {

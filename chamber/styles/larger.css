@@ -102,9 +102,8 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: 4fr 4fr;
+        grid-template-columns: 2fr 2fr;
         grid-gap: 10px;
-        margin-left: -300px;
     }
 
     .sidebar-form {

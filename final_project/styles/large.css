@@ -149,16 +149,63 @@
     }
 
     /*Reservations css*/
-    .agreements{
-        max-width: 50%;
-        margin: 0 auto;
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
         margin-top: 50px;
     }
 
-    .grid-form{
-        max-width: 50%;
-        margin: 0 auto;
+    .agreements h2{
+        font-size: 30px;
+        margin-bottom: 25px;
+        margin-top: 30px;
+    }
+    .agreements ul{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .agreements li{
+        margin-bottom: 30px;
+    }
+
+    .grid-form h1{
+        font-size: 30px;
+    }
+
+    #reserve_bt{
+        max-width: 500px;
+        padding: 10px 40px ;
+        font-size: 18px;
+    }
+
+    #contact_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form{
         margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 25px;
+    }
+
+    .agreements-contact h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .agreements-contact h3{
+        font-size: 25px;
+        color: #023047;
+        margin-top: 25px;
+    }
+
+    .agreements-contact ul{
+        font-size: 25px;
+        color: #023047;
     }
 
 }
