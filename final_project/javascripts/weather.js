@@ -11,7 +11,7 @@ function updateWeather() {
         <div>Current Humidity: ${weatherData.main.humidity}%</div><br>
         <div>Tomorrow's Forecast at 15:00 (3:00pm): ${data.list[8].main.temp}°F</div><br>
         <div>Weather: ${weatherData.weather[0].description}</div>
-        <img src="${iconUrl}" alt="Weather Icon" style="width:50px;height:auto;">
+        <img class="weather-img" src="${iconUrl}" alt="Weather Icon">
 
       `;
       document.getElementById('weather-info').innerHTML = weatherInfo;

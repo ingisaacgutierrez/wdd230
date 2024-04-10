@@ -452,7 +452,7 @@ img {
 /*table css*/
 #rental_table {
     margin: 50px auto; 
-    max-width: 650px;
+    max-width: 80%;
     padding: 0.5rem;
 }
 
@@ -477,11 +477,6 @@ img {
 
 .th, .reservation_walk{
     color: var(--secondary-color);
-}
-
-.reservation, .walk-in {
-    font-weight: bold;
-    color: #fff;
 }
 
 .rental_button {
