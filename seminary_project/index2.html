@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Distancias y Punto Medio</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Distancias y Punto Medio</h1>
+
+    <div id="map"></div>
+
+    <form id="coordinatesForm">
+        <button type="button" onclick="addNewEntry()">Crear Nuevo Grupo</button><br><br>
+
+        <div id="coordinatesEntries">
+            <div>
+                <label>Latitud:</label>
+                <input type="text" name="lat[]" required>
+                <label>Longitud:</label>
+                <input type="text" name="lng[]" required><br><br>
+            </div>
+        </div>
+
+        <button type="button" onclick="calculateDistances()">Calcular</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./javascript/calculate_distance.js"></script>
+</body>
+</html>
+
+
+
